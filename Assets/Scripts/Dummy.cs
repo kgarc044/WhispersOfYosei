@@ -28,11 +28,22 @@ public class Dummy : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Backslash)){
             Damage(10);
         }
+        if(Input.GetKeyDown(KeyCode.Slash)){
+            Recover(10);
+        }
     }
 
     void Damage(int dmg){
-        currentHealth -= dmg;
+        if(currentHealth > 0){
+            currentHealth -= dmg;
+            health.SetCurrent(currentHealth);
+        }
+    }
 
-        health.SetCurrent(currentHealth);
+    void Recover(int heal){
+        if(currentHealth < maxHealth){
+            currentHealth += heal;
+            health.SetCurrent(currentHealth);
+        }
     }
 }
