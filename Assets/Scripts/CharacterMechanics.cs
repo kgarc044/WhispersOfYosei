@@ -8,7 +8,7 @@ public class CharacterMechanics : MonoBehaviour
     public RuntimeAnimatorController FireAttack;
     public RuntimeAnimatorController ElectricAttack;
     public RuntimeAnimatorController WaterAttack;
-    //public RuntimeAnimatorController EarthAttack;
+    public RuntimeAnimatorController EarthAttack;
 
 
     string elementCheck;
@@ -46,6 +46,22 @@ public class CharacterMechanics : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("IsFireAttack", false);
         }
+        if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Electric")
+        {
+            GetComponent<Animator>().SetBool("IsElectricAttack", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("IsElectricAttack", false);
+        }
+        if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Earth")
+        {
+            GetComponent<Animator>().SetBool("IsEarthAttack", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("IsEarthAttack", false);
+        }
     }
 
     void ChangeSprite()
@@ -59,6 +75,16 @@ public class CharacterMechanics : MonoBehaviour
         {
             cg.gameObject.GetComponent<Animator>().runtimeAnimatorController = FireAttack;
             elementCheck = "Fire";
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            cg.gameObject.GetComponent<Animator>().runtimeAnimatorController = ElectricAttack;
+            elementCheck = "Electric";
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            cg.gameObject.GetComponent<Animator>().runtimeAnimatorController = EarthAttack;
+            elementCheck = "Earth";
         }
     }
 }
