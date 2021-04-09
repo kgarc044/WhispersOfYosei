@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: ed7c174a3547b604782dbea779188a7e
+guid: 414033b2fd5bed54ba5b2996a469445c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4764475711550331932
-    second: shino_idle_electro_animation-Sheet_0
+      213: -5904700774778410202
+    second: Black_Knight_slashattack-Sheet_0
   - first:
-      213: -4033451278088043919
-    second: shino_idle_electro_animation-Sheet_1
+      213: -1959383925921327393
+    second: Black_Knight_slashattack-Sheet_1
   - first:
-      213: -2717832640698789864
-    second: shino_idle_electro_animation-Sheet_2
+      213: 4884347629440922992
+    second: Black_Knight_slashattack-Sheet_2
   - first:
-      213: -6496890007794243252
-    second: shino_idle_electro_animation-Sheet_3
+      213: -2673160737165225646
+    second: Black_Knight_slashattack-Sheet_3
   - first:
-      213: -7130547029842596780
-    second: shino_idle_electro_animation-Sheet_4
+      213: -6643831206857672109
+    second: Black_Knight_slashattack-Sheet_4
   - first:
-      213: 796960065957123667
-    second: shino_idle_electro_animation-Sheet_5
+      213: -5541647547278004136
+    second: Black_Knight_slashattack-Sheet_5
   - first:
-      213: -8102744732088363258
-    second: shino_idle_electro_animation-Sheet_6
+      213: -365510667167005941
+    second: Black_Knight_slashattack-Sheet_6
   - first:
-      213: 3693454797130760615
-    second: shino_idle_electro_animation-Sheet_7
+      213: 1249703721594122486
+    second: Black_Knight_slashattack-Sheet_7
+  - first:
+      213: -8657913218058666764
+    second: Black_Knight_slashattack-Sheet_8
+  - first:
+      213: 1467352584831622934
+    second: Black_Knight_slashattack-Sheet_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -61,7 +67,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -85,7 +91,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -127,169 +133,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_0
+      name: Black_Knight_slashattack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.70068026, y: 0.48724508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62beb560ee94e0ea0800000000000000
+      internalID: -5904700774778410202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.7108843, y: 0.47874165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd659dc53bedec4e0800000000000000
+      internalID: -1959383925921327393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.7040817, y: 0.48299336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075f8546a40b8c340800000000000000
+      internalID: 4884347629440922992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.71088445, y: 0.4659865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251deb9f87607ead0800000000000000
+      internalID: -2673160737165225646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.71088433, y: 0.46598637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35af797c7be5cc3a0800000000000000
+      internalID: -6643831206857672109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.7142857, y: 0.46598637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850741aaaec1813b0800000000000000
+      internalID: -5541647547278004136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.71088445, y: 0.47874153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0305e91cf17deaf0800000000000000
+      internalID: -365510667167005941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 160
+        height: 128
+      alignment: 9
+      pivot: {x: 0.71088445, y: 0.46598637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0f910e9e6d75110800000000000000
+      internalID: 1249703721594122486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_slashattack-Sheet_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 128
       alignment: 9
-      pivot: {x: 0.486491, y: 0.19604854}
+      pivot: {x: 0.70408165, y: 0.46173462}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e3e018659e21edb0800000000000000
-      internalID: -4764475711550331932
+      spriteID: 4fc347dbcc9e8d780800000000000000
+      internalID: -8657913218058666764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_1
+      name: Black_Knight_slashattack-Sheet_9
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 128
       alignment: 9
-      pivot: {x: 0.4932456, y: 0.18253958}
+      pivot: {x: 0.7040817, y: 0.48299313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17287b6ce6d4608c0800000000000000
-      internalID: -4033451278088043919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.49324536, y: 0.18929406}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 810df2cec91584ad0800000000000000
-      internalID: -2717832640698789864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.48649096, y: 0.18253958}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c49a3acb5f866d5a0800000000000000
-      internalID: -6496890007794243252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.4932456, y: 0.19604854}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45ce30071453b0d90800000000000000
-      internalID: -7130547029842596780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.4932456, y: 0.18929406}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 356db8f15fe5f0b00800000000000000
-      internalID: 796960065957123667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.4864912, y: 0.20280302}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 607943aa8944d8f80800000000000000
-      internalID: -8102744732088363258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_idle_electro_animation-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.4932456, y: 0.19604854}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a101f8b199c14330800000000000000
-      internalID: 3693454797130760615
+      spriteID: 61fd32bc6651d5410800000000000000
+      internalID: 1467352584831622934
       vertices: []
       indices: 
       edges: []
@@ -297,7 +345,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8306160887f69fd4bb2d79ccbc1fce2d
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

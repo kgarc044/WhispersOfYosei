@@ -1,40 +1,49 @@
 fileFormatVersion: 2
-guid: a113cae206d388742b56d566124bddcb
+guid: 23914cdb07876704fafb1c0449160a51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1828553327701632064
-    second: shino_jump-Sheet_0
+      213: -5610445507655412245
+    second: Black_Knight_charge_attack-Sheet_0
   - first:
-      213: 9205964158742710203
-    second: shino_jump-Sheet_1
+      213: -1871971149915362804
+    second: Black_Knight_charge_attack-Sheet_1
   - first:
-      213: 2739118810791382634
-    second: shino_jump-Sheet_2
+      213: -5034444211616910280
+    second: Black_Knight_charge_attack-Sheet_2
   - first:
-      213: -1795207119995534149
-    second: shino_jump-Sheet_3
+      213: 2324707890433916956
+    second: Black_Knight_charge_attack-Sheet_3
   - first:
-      213: -6733004811752623379
-    second: shino_jump-Sheet_4
+      213: 7502172898420925313
+    second: Black_Knight_charge_attack-Sheet_4
   - first:
-      213: -1003649863943522038
-    second: shino_jump-Sheet_5
+      213: -1999748546829694693
+    second: Black_Knight_charge_attack-Sheet_5
   - first:
-      213: -7655990103699131119
-    second: shino_jump-Sheet_6
+      213: -5169985060688422692
+    second: Black_Knight_charge_attack-Sheet_6
   - first:
-      213: -5898009967163629729
-    second: shino_jump-Sheet_7
+      213: 1823732120753152962
+    second: Black_Knight_charge_attack-Sheet_7
   - first:
-      213: -5826763767054643781
-    second: shino_jump-Sheet_8
+      213: -3869511591029806147
+    second: Black_Knight_charge_attack-Sheet_8
   - first:
-      213: -8121498139186234444
-    second: shino_jump-Sheet_9
+      213: 6048746040172728557
+    second: Black_Knight_charge_attack-Sheet_9
   - first:
-      213: 245857104185560815
-    second: shino_jump-Sheet_10
+      213: -9013384944248452705
+    second: Black_Knight_charge_attack-Sheet_10
+  - first:
+      213: -5948021865328989711
+    second: Black_Knight_charge_attack-Sheet_11
+  - first:
+      213: -2254230234916447787
+    second: Black_Knight_charge_attack-Sheet_12
+  - first:
+      213: 9141605290176317430
+    second: Black_Knight_charge_attack-Sheet_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +79,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -94,7 +103,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -136,232 +145,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shino_jump-Sheet_0
+      name: Black_Knight_charge_attack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9103154, y: 0.47298193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be553844981b322b0800000000000000
+      internalID: -5610445507655412245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.90678084, y: 0.47966075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ae383482c6506e0800000000000000
+      internalID: -1871971149915362804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9071028, y: 0.4730096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8347d05c9af022ab0800000000000000
+      internalID: -5034444211616910280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 384
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9093516, y: 0.4820063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c108cdf6285034020800000000000000
+      internalID: 2324707890433916956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.90710264, y: 0.49100304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18321fdb0821d1860800000000000000
+      internalID: 7502172898420925313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9071026, y: 0.4820063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19cc12ba477f34e0800000000000000
+      internalID: -1999748546829694693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9093518, y: 0.4730096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd81793aaf58048b0800000000000000
+      internalID: -5169985060688422692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.90710235, y: 0.46401286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c326f683b23f4910800000000000000
+      internalID: 1823732120753152962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.90710264, y: 0.47300935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb6962a5bbbc4ac0800000000000000
+      internalID: -3869511591029806147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9071026, y: 0.49100292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0db05d97671f350800000000000000
+      internalID: 6048746040172728557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.9048536, y: 0.47300935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99873ee5260ae280800000000000000
+      internalID: -9013384944248452705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.90710235, y: 0.47300935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f92fc0a0a1647da0800000000000000
+      internalID: -5948021865328989711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_charge_attack-Sheet_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 512
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      pivot: {x: 0.9093518, y: 0.4999999}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 044a38e3093506910800000000000000
-      internalID: 1828553327701632064
+      spriteID: 5d91cd57b8d57b0e0800000000000000
+      internalID: -2254230234916447787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb746d880a722cf70800000000000000
-      internalID: 9205964158742710203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.08}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6e8fc2cb0e430620800000000000000
-      internalID: 2739118810791382634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.23}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb40a62c2a42617e0800000000000000
-      internalID: -1795207119995534149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.50477505, y: 0.44}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de23d74fbcf8f82a0800000000000000
-      internalID: -6733004811752623379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a09f6cc24c15212f0800000000000000
-      internalID: -1003649863943522038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.44}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1157b19509570c590800000000000000
-      internalID: -7655990103699131119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.21}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5f9f711f2f062ea0800000000000000
-      internalID: -5898009967163629729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_8
+      name: Black_Knight_charge_attack-Sheet_13
       rect:
         serializedVersion: 2
         x: 512
         y: 0
-        width: 64
+        width: 512
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.09}
+      pivot: {x: 0.9071026, y: 0.47300968}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbd4792b93d232fa0800000000000000
-      internalID: -5826763767054643781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bbfec1d874aa4f80800000000000000
-      internalID: -8121498139186234444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fee8c70dbb5796300800000000000000
-      internalID: 245857104185560815
+      spriteID: 6f78acdb3918dde70800000000000000
+      internalID: 9141605290176317430
       vertices: []
       indices: 
       edges: []
@@ -369,7 +441,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dfafe9799e8303e4082cb64295284740
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

@@ -151,7 +151,7 @@ TextureImporter:
       name: shino_earth_attack-Sheet_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 0
         width: 128
         height: 64
@@ -172,7 +172,7 @@ TextureImporter:
       name: shino_earth_attack-Sheet_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 255
         y: 0
         width: 128
         height: 64
