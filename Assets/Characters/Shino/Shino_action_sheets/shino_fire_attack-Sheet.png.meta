@@ -26,6 +26,57 @@ TextureImporter:
   - first:
       213: 4705637063817583549
     second: shino_fire_attack-Sheet_7
+  - first:
+      213: -7030873951832587921
+    second: shino_fire_attack-Sheet_8
+  - first:
+      213: -5618467780779688715
+    second: shino_fire_attack-Sheet_9
+  - first:
+      213: -8735343977715962697
+    second: shino_fire_attack-Sheet_10
+  - first:
+      213: 682134204683857684
+    second: shino_fire_attack-Sheet_11
+  - first:
+      213: 1969588209085845244
+    second: shino_fire_attack-Sheet_12
+  - first:
+      213: 6076717932463580961
+    second: shino_fire_attack-Sheet_13
+  - first:
+      213: 3952794853482975442
+    second: shino_fire_attack-Sheet_14
+  - first:
+      213: 4345343226702871955
+    second: shino_fire_attack-Sheet_15
+  - first:
+      213: -4894386596107567523
+    second: shino_fire_attack-Sheet_16
+  - first:
+      213: 8392008154697178121
+    second: shino_fire_attack-Sheet_17
+  - first:
+      213: -750602219396773121
+    second: shino_fire_attack-Sheet_18
+  - first:
+      213: 7768591410267297991
+    second: shino_fire_attack-Sheet_19
+  - first:
+      213: -80349430469796002
+    second: shino_fire_attack-Sheet_20
+  - first:
+      213: -5738332176221388162
+    second: shino_fire_attack-Sheet_21
+  - first:
+      213: -2459853507965590707
+    second: shino_fire_attack-Sheet_22
+  - first:
+      213: 3026132680695409600
+    second: shino_fire_attack-Sheet_23
+  - first:
+      213: 7380971530376934458
+    second: shino_fire_attack-Sheet_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +121,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,6 +174,42 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -135,7 +222,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.25713333, y: 0.29367083}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,7 +243,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.25713325, y: 0.30226788}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,7 +264,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.2549839, y: 0.2893723}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,7 +285,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.25928235, y: 0.29367083}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,7 +306,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.2549839, y: 0.2893723}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,7 +327,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.24638653, y: 0.30226788}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -261,7 +348,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.24853563, y: 0.29796937}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -282,7 +369,7 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 9
-      pivot: {x: 0.25, y: 0.2}
+      pivot: {x: 0.24853611, y: 0.30226788}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
