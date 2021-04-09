@@ -5,13 +5,8 @@ using UnityEngine;
 public class CharacterMechanics : MonoBehaviour
 {
     public GameObject cg;
-    //public RuntimeAnimatorController Fire;
-    //public RuntimeAnimatorController Electric;
-    //public RuntimeAnimatorController Water;
-    //public RuntimeAnimatorController Earth;
-
-    //public RuntimeAnimatorController FireAttack;
-    //public RuntimeAnimatorController ElectricAttack;
+    public RuntimeAnimatorController FireAttack;
+    public RuntimeAnimatorController ElectricAttack;
     public RuntimeAnimatorController WaterAttack;
     //public RuntimeAnimatorController EarthAttack;
 
@@ -63,20 +58,10 @@ public class CharacterMechanics : MonoBehaviour
             cg.gameObject.GetComponent<Animator>().runtimeAnimatorController = WaterAttack;
             elementCheck = "Water";
         }
-        /*if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Fire;
+            cg.gameObject.GetComponent<Animator>().runtimeAnimatorController = FireAttack;
             elementCheck = "Fire";
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Electric;
-            elementCheck = "Electric";
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Earth;
-            elementCheck = "Earth";
-        }*/
     }
 }
