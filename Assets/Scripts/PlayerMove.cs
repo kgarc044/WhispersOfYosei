@@ -28,6 +28,15 @@ public class PlayerMove : MonoBehaviour
         {
             Jump();
         }
+        /*if(moveX != 0)
+        {
+            GetComponent<Animator>().SetBool("IsRunning", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("IsRunning", false);
+        }
+        */
         if (moveX < 0.0f)
         {
             GetComponent<SpriteRenderer>().flipX = true;

@@ -130,12 +130,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 22
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,12 +151,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 86
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 150
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 214
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 278
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 342
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 406
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: shino_run_nospirit_animation-Sheet_7
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+        x: 470
+        y: 1
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
