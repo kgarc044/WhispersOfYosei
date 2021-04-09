@@ -31,28 +31,25 @@ public class CharacterMechanics : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Water")
         {
-            GetComponent<Animator>().SetBool("IsAttack", true);
+            GetComponent<Animator>().SetBool("IsWaterAttack", true);
         }
         else
         {
-            GetComponent<Animator>().SetBool("IsAttack", false);
+            GetComponent<Animator>().SetBool("IsWaterAttack", false);
         }
-        /*
+        
         if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Fire")
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = FireAttack;
+            GetComponent<Animator>().SetBool("IsFireAttack", true);
         }
-        if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Electric")
+        else
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = ElectricAttack;
+            GetComponent<Animator>().SetBool("IsFireAttack", false);
         }
-        if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Earth")
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = EarthAttack;
-        }*/
     }
+
     void ChangeSprite()
-    {
+    { 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             cg.gameObject.GetComponent<Animator>().runtimeAnimatorController = WaterAttack;
