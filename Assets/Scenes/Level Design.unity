@@ -235,6 +235,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 3
   playerJumpPower: 500
+  isgrounded: 0
+  groundCheck: {fileID: 0}
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 0
+  checkRadius: 0.2
 --- !u!61 &159055625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -415,6 +421,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &290143096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290143097}
+  m_Layer: 0
+  m_Name: groundCheckpos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290143097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290143096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.064, y: -0.508, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 540321025}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &295053675
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +519,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 3
   playerJumpPower: 500
+  isgrounded: 0
+  groundCheck: {fileID: 0}
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 0
+  checkRadius: 0.2
 --- !u!61 &295053679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -735,6 +777,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 3
   playerJumpPower: 700
+  isgrounded: 1
+  groundCheck: {fileID: 290143097}
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 64
+  checkRadius: 0.2
 --- !u!61 &540321022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -781,7 +829,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &540321024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -848,6 +896,7 @@ Transform:
   - {fileID: 1305832745}
   - {fileID: 295053676}
   - {fileID: 159055622}
+  - {fileID: 290143097}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1048,9 +1097,9 @@ GameObject:
   - component: {fileID: 1193296862}
   - component: {fileID: 1193296861}
   - component: {fileID: 1193296860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,6 +1848,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 3
   playerJumpPower: 500
+  isgrounded: 0
+  groundCheck: {fileID: 0}
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 0
+  checkRadius: 0.2
 --- !u!61 &1305832748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2213,6 +2268,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 3
   playerJumpPower: 500
+  isgrounded: 0
+  groundCheck: {fileID: 0}
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 0
+  checkRadius: 0.2
 --- !u!61 &2078098545
 BoxCollider2D:
   m_ObjectHideFlags: 0
