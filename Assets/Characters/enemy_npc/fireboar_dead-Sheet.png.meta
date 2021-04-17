@@ -23,6 +23,15 @@ TextureImporter:
   - first:
       213: 8025252140897458414
     second: fireboar_dead-Sheet_9
+  - first:
+      213: -4972472459724613227
+    second: fireboar_dead-Sheet_0
+  - first:
+      213: -7536951873179511435
+    second: fireboar_dead-Sheet_1
+  - first:
+      213: -6149666234151725308
+    second: fireboar_dead-Sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +76,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,10 +136,10 @@ TextureImporter:
       name: fireboar_dead-Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 192
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,10 +157,10 @@ TextureImporter:
       name: fireboar_dead-Sheet_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 256
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +178,10 @@ TextureImporter:
       name: fireboar_dead-Sheet_5
       rect:
         serializedVersion: 2
-        x: 128
+        x: 320
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +199,10 @@ TextureImporter:
       name: fireboar_dead-Sheet_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 384
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,13 +217,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireboar_dead-Sheet_7
+      name: fireboar_dead-Sheet_0
       rect:
         serializedVersion: 2
-        x: 256
+        x: 0
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c75d169625dfa10800000000000000
-      internalID: 1944801226660346946
+      spriteID: 59993b6a4aa3efab0800000000000000
+      internalID: -4972472459724613227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireboar_dead-Sheet_8
+      name: fireboar_dead-Sheet_1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 64
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7582b272825a7b2d0800000000000000
-      internalID: -3262957813132220329
+      spriteID: 5759bed243e576790800000000000000
+      internalID: -7536951873179511435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireboar_dead-Sheet_9
+      name: fireboar_dead-Sheet_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 128
         y: 0
         width: 64
-        height: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,8 +273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee8d2237d4c6f5f60800000000000000
-      internalID: 8025252140897458414
+      spriteID: 4071c22742ff7aaa0800000000000000
+      internalID: -6149666234151725308
       vertices: []
       indices: 
       edges: []

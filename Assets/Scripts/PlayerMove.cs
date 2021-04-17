@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public int playerSpeed = 10;
+    public int playerSpeed = 15;
     public int playerJumpPower = 1250;
     private float moveX;
     public bool isgrounded;
     public Transform groundCheck;
     public LayerMask whatisGround;
-    public float checkRadius = 0.5f;
+    public float checkRadius = 0.2f;
     //public bool onGround;
     // Start is called before the first frame update
     void Start()
