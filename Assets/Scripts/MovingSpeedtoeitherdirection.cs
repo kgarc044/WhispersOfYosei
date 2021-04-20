@@ -25,10 +25,10 @@ public class MovingSpeedtoeitherdirection : MonoBehaviour
             {
                 Flip();
             }
-            targetPosition.x = 1f;
+            targetPosition.x = -4f;
             
         }
-        else if(transform.position.x == 1f)
+        else if(transform.position.x == -4f)
         {
             if (facingRight == true)
             {
