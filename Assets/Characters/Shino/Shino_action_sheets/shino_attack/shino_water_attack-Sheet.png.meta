@@ -1,73 +1,31 @@
 fileFormatVersion: 2
-guid: 8ecb4bf911d22a148ad1c916be8843e4
+guid: 77eb89dc3028c464ca142a49c9824c3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2497444410829951899
-    second: shino_jump_nospirit-Sheet_0
+      213: -2663618858570013393
+    second: shino_water_attack-Sheet_0
   - first:
-      213: -571141136180063135
-    second: shino_jump_nospirit-Sheet_1
+      213: 6450166389531314673
+    second: shino_water_attack-Sheet_1
   - first:
-      213: -7236218591109400683
-    second: shino_jump_nospirit-Sheet_2
+      213: 811525681360867266
+    second: shino_water_attack-Sheet_2
   - first:
-      213: 5082393070709312505
-    second: shino_jump_nospirit-Sheet_3
+      213: -492654275727677577
+    second: shino_water_attack-Sheet_4
   - first:
-      213: -567960598028971739
-    second: shino_jump_nospirit-Sheet_4
+      213: -1396085938015007498
+    second: shino_water_attack-Sheet_5
   - first:
-      213: -2106708805973434996
-    second: shino_jump_nospirit-Sheet_5
+      213: -3384946186671250884
+    second: shino_water_attack-Sheet_6
   - first:
-      213: -6121808338144002510
-    second: shino_jump_nospirit-Sheet_6
+      213: 1059545601959186341
+    second: shino_water_attack-Sheet_7
   - first:
-      213: 1707481289651279045
-    second: shino_jump_nospirit-Sheet_7
-  - first:
-      213: 3329633891779810683
-    second: shino_jump_nospirit-Sheet_8
-  - first:
-      213: -3533673255039325692
-    second: shino_jump_nospirit-Sheet_9
-  - first:
-      213: 7034065048668359284
-    second: shino_jump_nospirit-Sheet_10
-  - first:
-      213: 1828553327701632064
-    second: shino_jump-Sheet_0
-  - first:
-      213: 9205964158742710203
-    second: shino_jump-Sheet_1
-  - first:
-      213: 2739118810791382634
-    second: shino_jump-Sheet_2
-  - first:
-      213: -1795207119995534149
-    second: shino_jump-Sheet_3
-  - first:
-      213: -6733004811752623379
-    second: shino_jump-Sheet_4
-  - first:
-      213: -1003649863943522038
-    second: shino_jump-Sheet_5
-  - first:
-      213: -7655990103699131119
-    second: shino_jump-Sheet_6
-  - first:
-      213: -5898009967163629729
-    second: shino_jump-Sheet_7
-  - first:
-      213: -5826763767054643781
-    second: shino_jump-Sheet_8
-  - first:
-      213: -8121498139186234444
-    second: shino_jump-Sheet_9
-  - first:
-      213: 245857104185560815
-    second: shino_jump-Sheet_10
+      213: -4412383877051614494
+    second: shino_water_attack-Sheet_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,75 +127,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shino_jump-Sheet_0
+      name: shino_water_attack-Sheet_0
       rect:
         serializedVersion: 2
-        x: 278
-        y: 44
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 044a38e3093506910800000000000000
-      internalID: 1828553327701632064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 65
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb746d880a722cf70800000000000000
-      internalID: 9205964158742710203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 44
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6e8fc2cb0e430620800000000000000
-      internalID: 2739118810791382634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 22
+        x: 6
         y: 1
-        width: 22
+        width: 26
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,19 +141,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb40a62c2a42617e0800000000000000
-      internalID: -1795207119995534149
+      spriteID: f2527e5b2cce80bd0800000000000000
+      internalID: -2663618858570013393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_4
+      name: shino_water_attack-Sheet_1
       rect:
         serializedVersion: 2
-        x: 86
+        x: 54
         y: 1
-        width: 22
+        width: 26
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -267,61 +162,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de23d74fbcf8f82a0800000000000000
-      internalID: -6733004811752623379
+      spriteID: 1f98d262828938950800000000000000
+      internalID: 6450166389531314673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_5
+      name: shino_water_attack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf0f9bbe4e134b00800000000000000
+      internalID: 811525681360867266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shino_water_attack-Sheet_4
       rect:
         serializedVersion: 2
         x: 150
         y: 1
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a09f6cc24c15212f0800000000000000
-      internalID: -1003649863943522038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 18
-        width: 22
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1157b19509570c590800000000000000
-      internalID: -7655990103699131119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 15
-        width: 22
+        width: 31
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -330,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f9f711f2f062ea0800000000000000
-      internalID: -5898009967163629729
+      spriteID: 777ac22eb8db929f0800000000000000
+      internalID: -492654275727677577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_8
+      name: shino_water_attack-Sheet_5
       rect:
         serializedVersion: 2
-        x: 534
+        x: 198
         y: 1
-        width: 22
-        height: 32
+        width: 28
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,17 +225,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbd4792b93d232fa0800000000000000
-      internalID: -5826763767054643781
+      spriteID: 6fc82b47c3b10ace0800000000000000
+      internalID: -1396085938015007498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_9
+      name: shino_water_attack-Sheet_6
       rect:
         serializedVersion: 2
-        x: 598
+        x: 245
+        y: 1
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32a5af90614601d0800000000000000
+      internalID: -3384946186671250884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shino_water_attack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 293
         y: 1
         width: 22
         height: 35
@@ -372,17 +267,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bbfec1d874aa4f80800000000000000
-      internalID: -8121498139186234444
+      spriteID: 5afca1c7c1344be00800000000000000
+      internalID: 1059545601959186341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_10
+      name: shino_water_attack-Sheet_8
       rect:
         serializedVersion: 2
-        x: 662
+        x: 341
         y: 1
         width: 22
         height: 35
@@ -393,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee8c70dbb5796300800000000000000
-      internalID: 245857104185560815
+      spriteID: 2ea7dabdd3014c2c0800000000000000
+      internalID: -4412383877051614494
       vertices: []
       indices: 
       edges: []

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 1724918ec88ed834bb9b6844675e627f
+guid: 9d2874f2b9cc81c429b30332ec174090
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1783733647252782124
-    second: shino_hurt_nospirit_animation-Sheet_0
+      213: 1741889471038222353
+    second: earth_hurt_animation-Sheet_0
   - first:
-      213: -8010943091591476925
-    second: shino_hurt_nospirit_animation-Sheet_1
+      213: 5767329691474289570
+    second: earth_hurt_animation-Sheet_1
   - first:
-      213: -636990175997281030
-    second: shino_hurt_nospirit_animation-Sheet_2
+      213: 7842839291292762422
+    second: earth_hurt_animation-Sheet_2
   - first:
-      213: 4519836778631329006
-    second: shino_hurt_nospirit_animation-Sheet_3
+      213: 523537565473156643
+    second: earth_hurt_animation-Sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_0
+      name: earth_hurt_animation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1
-        width: 22
-        height: 34
+        x: 15
+        y: 43
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d3069dc2b7ee37e0800000000000000
-      internalID: -1783733647252782124
+      spriteID: 110f937be3f6c2810800000000000000
+      internalID: 1741889471038222353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_1
+      name: earth_hurt_animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1
-        width: 23
-        height: 34
+        x: 48
+        y: 41
+        width: 8
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34902d5b3b963d090800000000000000
-      internalID: -8010943091591476925
+      spriteID: 2a363ea3ccba90050800000000000000
+      internalID: 5767329691474289570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_2
+      name: earth_hurt_animation-Sheet_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1
-        width: 23
-        height: 35
+        x: 18
+        y: 9
+        width: 4
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afcb4425fc4f827f0800000000000000
-      internalID: -636990175997281030
+      spriteID: 6314bf348cc57dc60800000000000000
+      internalID: 7842839291292762422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_3
+      name: earth_hurt_animation-Sheet_3
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1
-        width: 22
-        height: 34
+        x: 47
+        y: 9
+        width: 9
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee4f0116a9fa9be30800000000000000
-      internalID: 4519836778631329006
+      spriteID: 32ea99854aaf34700800000000000000
+      internalID: 523537565473156643
       vertices: []
       indices: 
       edges: []
