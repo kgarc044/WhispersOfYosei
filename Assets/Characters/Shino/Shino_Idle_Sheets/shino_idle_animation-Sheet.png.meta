@@ -1,73 +1,55 @@
 fileFormatVersion: 2
-guid: 8ecb4bf911d22a148ad1c916be8843e4
+guid: c15f3e448d493714a822e35531b7b018
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2497444410829951899
-    second: shino_jump_nospirit-Sheet_0
+      213: -6660340767791245697
+    second: shino_idle_nospirit_animation-Sheet_0
   - first:
-      213: -571141136180063135
-    second: shino_jump_nospirit-Sheet_1
+      213: 4821011606174888161
+    second: shino_idle_nospirit_animation-Sheet_1
   - first:
-      213: -7236218591109400683
-    second: shino_jump_nospirit-Sheet_2
+      213: 4059814805450163936
+    second: shino_idle_nospirit_animation-Sheet_2
   - first:
-      213: 5082393070709312505
-    second: shino_jump_nospirit-Sheet_3
+      213: -1797213791487123677
+    second: shino_idle_nospirit_animation-Sheet_3
   - first:
-      213: -567960598028971739
-    second: shino_jump_nospirit-Sheet_4
+      213: -1469800582162720858
+    second: shino_idle_nospirit_animation-Sheet_4
   - first:
-      213: -2106708805973434996
-    second: shino_jump_nospirit-Sheet_5
+      213: 8394519120387848724
+    second: shino_idle_nospirit_animation-Sheet_5
   - first:
-      213: -6121808338144002510
-    second: shino_jump_nospirit-Sheet_6
+      213: -9183110232158630679
+    second: shino_idle_nospirit_animation-Sheet_6
   - first:
-      213: 1707481289651279045
-    second: shino_jump_nospirit-Sheet_7
+      213: -1907452462611607658
+    second: shino_idle_nospirit_animation-Sheet_7
   - first:
-      213: 3329633891779810683
-    second: shino_jump_nospirit-Sheet_8
+      213: 3063792683648403414
+    second: shino_idle_animation-Sheet_0
   - first:
-      213: -3533673255039325692
-    second: shino_jump_nospirit-Sheet_9
+      213: -3487264486427687767
+    second: shino_idle_animation-Sheet_1
   - first:
-      213: 7034065048668359284
-    second: shino_jump_nospirit-Sheet_10
+      213: 2270625670853556749
+    second: shino_idle_animation-Sheet_2
   - first:
-      213: 1828553327701632064
-    second: shino_jump-Sheet_0
+      213: -8243457917003273915
+    second: shino_idle_animation-Sheet_3
   - first:
-      213: 9205964158742710203
-    second: shino_jump-Sheet_1
+      213: -273272587487983591
+    second: shino_idle_animation-Sheet_4
   - first:
-      213: 2739118810791382634
-    second: shino_jump-Sheet_2
+      213: 5164547668429095164
+    second: shino_idle_animation-Sheet_5
   - first:
-      213: -1795207119995534149
-    second: shino_jump-Sheet_3
+      213: -6066103321043396153
+    second: shino_idle_animation-Sheet_6
   - first:
-      213: -6733004811752623379
-    second: shino_jump-Sheet_4
-  - first:
-      213: -1003649863943522038
-    second: shino_jump-Sheet_5
-  - first:
-      213: -7655990103699131119
-    second: shino_jump-Sheet_6
-  - first:
-      213: -5898009967163629729
-    second: shino_jump-Sheet_7
-  - first:
-      213: -5826763767054643781
-    second: shino_jump-Sheet_8
-  - first:
-      213: -8121498139186234444
-    second: shino_jump-Sheet_9
-  - first:
-      213: 245857104185560815
-    second: shino_jump-Sheet_10
+      213: -1184110131471269721
+    second: shino_idle_animation-Sheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +85,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -112,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,7 +109,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -165,77 +147,50 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shino_jump-Sheet_0
+      name: shino_idle_animation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 278
-        y: 44
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 044a38e3093506910800000000000000
-      internalID: 1828553327701632064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 65
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb746d880a722cf70800000000000000
-      internalID: 9205964158742710203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 44
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6e8fc2cb0e430620800000000000000
-      internalID: 2739118810791382634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 22
+        x: 21
         y: 1
         width: 22
         height: 35
@@ -246,17 +201,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb40a62c2a42617e0800000000000000
-      internalID: -1795207119995534149
+      spriteID: 6d7cd4e8637c48a20800000000000000
+      internalID: 3063792683648403414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_4
+      name: shino_idle_animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 86
+        x: 85
+        y: 1
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a484a80d6fba9fc0800000000000000
+      internalID: -3487264486427687767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shino_idle_animation-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0afb117402e28f10800000000000000
+      internalID: 2270625670853556749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shino_idle_animation-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549632043ba599d80800000000000000
+      internalID: -8243457917003273915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shino_idle_animation-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 277
         y: 1
         width: 22
         height: 35
@@ -267,101 +285,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de23d74fbcf8f82a0800000000000000
-      internalID: -6733004811752623379
+      spriteID: 9184def8704253cf0800000000000000
+      internalID: -273272587487983591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_5
+      name: shino_idle_animation-Sheet_5
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a09f6cc24c15212f0800000000000000
-      internalID: -1003649863943522038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 18
-        width: 22
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1157b19509570c590800000000000000
-      internalID: -7655990103699131119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 15
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5f9f711f2f062ea0800000000000000
-      internalID: -5898009967163629729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 534
-        y: 1
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbd4792b93d232fa0800000000000000
-      internalID: -5826763767054643781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shino_jump-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 598
+        x: 341
         y: 1
         width: 22
         height: 35
@@ -372,17 +306,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bbfec1d874aa4f80800000000000000
-      internalID: -8121498139186234444
+      spriteID: cf0c942ddb82ca740800000000000000
+      internalID: 5164547668429095164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_jump-Sheet_10
+      name: shino_idle_animation-Sheet_6
       rect:
         serializedVersion: 2
-        x: 662
+        x: 405
         y: 1
         width: 22
         height: 35
@@ -393,8 +327,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee8c70dbb5796300800000000000000
-      internalID: 245857104185560815
+      spriteID: 7c9146a4b2fd0dba0800000000000000
+      internalID: -6066103321043396153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shino_idle_animation-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0c6beeb12319fe0800000000000000
+      internalID: -1184110131471269721
       vertices: []
       indices: 
       edges: []
@@ -402,7 +357,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 8de0f246a0c4fc34ab6b814615f5e36d
     internalID: 0
     vertices: []
     indices: 

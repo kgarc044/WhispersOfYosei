@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 1724918ec88ed834bb9b6844675e627f
+guid: 19f29dd2a34995d4b89c1916330b234b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1783733647252782124
-    second: shino_hurt_nospirit_animation-Sheet_0
+      213: 2171454099260595029
+    second: earth_death-Sheet_0
   - first:
-      213: -8010943091591476925
-    second: shino_hurt_nospirit_animation-Sheet_1
+      213: -4659674968470607477
+    second: earth_death-Sheet_1
   - first:
-      213: -636990175997281030
-    second: shino_hurt_nospirit_animation-Sheet_2
+      213: -8966268065560245665
+    second: earth_death-Sheet_2
   - first:
-      213: 4519836778631329006
-    second: shino_hurt_nospirit_animation-Sheet_3
+      213: 8758125664894254699
+    second: earth_death-Sheet_3
+  - first:
+      213: -164318904525224504
+    second: earth_death-Sheet_4
+  - first:
+      213: -8270418956530179133
+    second: earth_death-Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_0
+      name: earth_death-Sheet_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1
-        width: 22
-        height: 34
+        x: 15
+        y: 43
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d3069dc2b7ee37e0800000000000000
-      internalID: -1783733647252782124
+      spriteID: 55b5e789ffd822e10800000000000000
+      internalID: 2171454099260595029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_1
+      name: earth_death-Sheet_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1
-        width: 23
-        height: 34
+        x: 15
+        y: 75
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34902d5b3b963d090800000000000000
-      internalID: -8010943091591476925
+      spriteID: b89a78fdd42855fb0800000000000000
+      internalID: -4659674968470607477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_2
+      name: earth_death-Sheet_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1
-        width: 23
-        height: 35
+        x: 47
+        y: 75
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afcb4425fc4f827f0800000000000000
-      internalID: -636990175997281030
+      spriteID: f5a4a5f13ba619380800000000000000
+      internalID: -8966268065560245665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shino_hurt_nospirit_animation-Sheet_3
+      name: earth_death-Sheet_3
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1
-        width: 22
-        height: 34
+        x: 79
+        y: 75
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +198,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee4f0116a9fa9be30800000000000000
-      internalID: 4519836778631329006
+      spriteID: b6ef042c3ec1b8970800000000000000
+      internalID: 8758125664894254699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earth_death-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 43
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c584e1b3d838bdf0800000000000000
+      internalID: -164318904525224504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earth_death-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 46
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3ac5017c1993d80800000000000000
+      internalID: -8270418956530179133
       vertices: []
       indices: 
       edges: []
