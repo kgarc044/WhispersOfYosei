@@ -4,12 +4,13 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MovingSpeedtoeitherdirection : MonoBehaviour
+public class BoarMove : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 targetPosition;
     public int speed = 3;
     public bool facingRight = false;
+    public int health = 100;
     void Start()
     {
         targetPosition = transform.position;
@@ -42,6 +43,22 @@ public class MovingSpeedtoeitherdirection : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPosition,speed * Time.deltaTime);
    
     }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if( health <= 0)
+        {
+            GetComponent<Animator>().SetBool("boarDeath", true);
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        
+        Destroy(gameObject,1);
+    }
+
     void Flip()
     {
         facingRight = !facingRight;

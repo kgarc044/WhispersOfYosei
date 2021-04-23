@@ -10,6 +10,7 @@ public class BoarDeath : MonoBehaviour
     public Transform PlayerCheck;
     public LayerMask whatisPlayer;
     public float checkRadius = 0.5f;
+
     void Start()
     {
         
