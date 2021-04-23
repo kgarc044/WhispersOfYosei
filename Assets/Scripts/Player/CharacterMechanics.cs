@@ -11,7 +11,7 @@ public class CharacterMechanics : MonoBehaviour
     //public RuntimeAnimatorController EarthAttack;
 
 
-    string elementCheck;
+     string elementCheck;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class CharacterMechanics : MonoBehaviour
         Attack();
     }
 
-    void Attack()
+    public void Attack()
     {
         if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Water")
         {
