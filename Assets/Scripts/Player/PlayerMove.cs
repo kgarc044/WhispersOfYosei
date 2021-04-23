@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
     public Transform groundCheck;
     public LayerMask whatisGround;
     public float checkRadius = 0.2f;
+    public bool FacingRight = true;
     //public bool onGround;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Animator>().SetBool("Grounded", isgrounded);
+        //GetComponent<Animator>().SetBool("Grounded", isgrounded);
         if (Input.GetButtonDown("Jump") && isgrounded)
         {
             Jump();
@@ -51,18 +52,20 @@ public class PlayerMove : MonoBehaviour
             GetComponent<Animator>().SetBool("IsRunning", false);
         }
         
-        if (moveX < 0.0f)
+        if (moveX < 0.0f && FacingRight)
         {
             if (!this.myAnimation.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
             {
-                GetComponent<SpriteRenderer>().flipX = true;
+                FacingRight = !FacingRight;
+                transform.Rotate(0f, 180f, 0f);
             }
         }
-        else if (moveX > 0.0f)
+        if (moveX > 0.0f && !FacingRight)
         {
             if (!this.myAnimation.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
             {
-                GetComponent<SpriteRenderer>().flipX = false;
+                FacingRight = !FacingRight;
+                transform.Rotate(0f, 180f, 0f);
             }
         }
         if (!this.myAnimation.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
