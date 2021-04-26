@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class PlayerStat : MonoBehaviour
 {
@@ -8,8 +9,12 @@ public class PlayerStat : MonoBehaviour
     public int maxMana = 10;
     public int currentHealth;
     public int currentMana;
+    public int regenRate = 0;
     public HealthBar hp;
     public ManaBar mp;
+
+    private WaitForSeconds tick = new WaitForSeconds(0.1f);
+    private Coroutine regen;
 
     // Start is called before the first frame update
     void Start()
@@ -55,13 +60,28 @@ public class PlayerStat : MonoBehaviour
         if(currentMana >= cost){
             currentMana -= cost;
             mp.SetCurrent(currentMana);
+            if(regen != null){
+                StopCoroutine(regen);
+            }
+            regen = StartCoroutine(Regen());
         }else{
             Debug.Log("Out of Mana\n");
         }
     }
 
-    void Regen(int r){
+    private IEnumerator Regen(){
+        yield return new WaitForSeconds(1);
 
+        while(currentMana < maxMana){
+            if(currentMana + regenRate > maxMana){
+                currentMana = maxMana;
+                mp.SetCurrent(currentMana);
+            }else{
+                currentMana += regenRate;
+                mp.SetCurrent(currentMana);
+            }
+            yield return tick;
+        }
     }
 //Contact Check
     void OnCollisionEnter2D(Collision2D touch){
