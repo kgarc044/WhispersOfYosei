@@ -26,8 +26,11 @@ public class PlayerStat : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Slash)){ //Healing Button for Debugging purposes
             Heal(10);
         }
+        if(Input.GetKeyDown(KeyCode.J)){
+            Cast(2);
+        }
     }
-
+//Health System
     void Damage(int dmg){ //Damage to the player
         if(currentHealth > dmg){
             currentHealth -= dmg;
@@ -46,6 +49,19 @@ public class PlayerStat : MonoBehaviour
             currentHealth = maxHealth;
             hp.SetCurrent(maxHealth);
         }
+    }
+//Mana System
+    void Cast(int cost){
+        if(currentMana >= cost){
+            currentMana -= cost;
+            mp.SetCurrent(currentMana);
+        }else{
+            Debug.Log("Out of Mana\n");
+        }
+    }
+
+    void Regen(int r){
+
     }
 //Contact Check
     void OnCollisionEnter2D(Collision2D touch){
