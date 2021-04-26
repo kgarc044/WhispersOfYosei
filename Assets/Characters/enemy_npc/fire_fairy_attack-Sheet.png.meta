@@ -1,28 +1,34 @@
 fileFormatVersion: 2
-guid: a8942d24c4a698d42b9e17ee42a37db7
+guid: 1d00889ccd3f81b48b8514518cbf6288
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -233539731945463870
-    second: waterball_projectile-Sheet_0
+      213: 2034846897077504344
+    second: fire_fairy_attack-Sheet_0
   - first:
-      213: 3522667106344558443
-    second: waterball_projectile-Sheet_1
+      213: 6446685355963296001
+    second: fire_fairy_attack-Sheet_1
   - first:
-      213: -5603040630593577219
-    second: waterball_projectile-Sheet_2
+      213: -2702647049325487632
+    second: fire_fairy_attack-Sheet_2
   - first:
-      213: -4525994056350963945
-    second: waterball_projectile-Sheet_3
+      213: -1416376651724443588
+    second: fire_fairy_attack-Sheet_3
   - first:
-      213: -5254825805973139092
-    second: waterball_projectile-Sheet_4
+      213: -4365011383379307464
+    second: fire_fairy_attack-Sheet_4
   - first:
-      213: -437182527897769167
-    second: waterball_projectile-Sheet_5
+      213: -5799980740629478313
+    second: fire_fairy_attack-Sheet_6
   - first:
-      213: 347569114694973721
-    second: waterball_projectile-Sheet_6
+      213: 2007330298621444443
+    second: fire_fairy_attack-Sheet_7
+  - first:
+      213: 7083535262807192153
+    second: fire_fairy_attack-Sheet_8
+  - first:
+      213: 705881758930350330
+    second: fire_fairy_attack-Sheet_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,179 +126,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waterball_projectile-Sheet_0
+      name: fire_fairy_attack-Sheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 73
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cf5374e9dc42ccf0800000000000000
-      internalID: -233539731945463870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterball_projectile-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 76
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6fde9fb11703e030800000000000000
-      internalID: 3522667106344558443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterball_projectile-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 75
-        width: 19
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfe936f8b300e32b0800000000000000
-      internalID: -5603040630593577219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterball_projectile-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 41
-        width: 21
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 717ebafa2607031c0800000000000000
-      internalID: -4525994056350963945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterball_projectile-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 41
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c615a6e45cb1317b0800000000000000
-      internalID: -5254825805973139092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterball_projectile-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 39
-        width: 8
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13b65a2aec0dee9f0800000000000000
-      internalID: -437182527897769167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterball_projectile-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 7
-        width: 4
-        height: 15
+        x: 16
+        y: 149
+        width: 40
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,8 +144,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9197a40b440d2d400800000000000000
-      internalID: 347569114694973721
+      spriteID: 8594c98c87a3d3c10800000000000000
+      internalID: 2034846897077504344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 149
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109a7ecdc2a377950800000000000000
+      internalID: 6446685355963296001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f952bfe3d44e7ad0800000000000000
+      internalID: -2702647049325487632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 83
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30bec580f4085ce0800000000000000
+      internalID: -1416376651724443588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 80
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834d32d064d5c63c0800000000000000
+      internalID: -4365011383379307464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 79
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7544caafe34528fa0800000000000000
+      internalID: -5799980740629478313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 15
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51c53475487bdb10800000000000000
+      internalID: 2007330298621444443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 15
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95273959ac5cd4260800000000000000
+      internalID: 7083535262807192153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fairy_attack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0b87648bbcbc900800000000000000
+      internalID: 705881758930350330
       vertices: []
       indices: 
       edges: []
