@@ -60,7 +60,7 @@ public class Slime_Follow_Behavior : MonoBehaviour
                 if (!isSearching)
                 {
                     isSearching = true;
-                    Invoke("StopChasingPlayer", 5);
+                    Invoke("StopChasingPlayer", 3);
                     GetComponent<Animator>().SetBool("slimerun", false);
                 }
 
@@ -141,7 +141,7 @@ public class Slime_Follow_Behavior : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().AddForce(Vector2.up *slime_jump, ForceMode2D.Impulse);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.tag)
         {
@@ -154,5 +154,6 @@ public class Slime_Follow_Behavior : MonoBehaviour
                 break;
         }
     }
+    */
     
 }

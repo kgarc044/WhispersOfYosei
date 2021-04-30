@@ -15475,7 +15475,7 @@ MonoBehaviour:
   slime_jump: 700
   castpoint: {fileID: 113615849}
   player: {fileID: 235070373}
-  moveSpeed: 1
+  moveSpeed: 0.5
   agroRange: 2
   isgrounded: 1
   groundCheck: {fileID: 140561348}
