@@ -8,10 +8,7 @@ public class Slime_Follow_Behavior : MonoBehaviour
     // Start is called before the first frame update
 
     [SerializeField]
-    float Enemy_Jump_Power;
-
-    [SerializeField]
-    float Enemy_Attack_Range;
+    float slime_jump;
 
     [SerializeField]
     Transform castpoint;
@@ -31,7 +28,7 @@ public class Slime_Follow_Behavior : MonoBehaviour
     bool isFacingleft;
     private bool isAgro = false;
     private bool isSearching;
-    private float canJump = 2f;
+    private float canJump = 1f;
 
     public bool isgrounded;
     public Transform groundCheck;
@@ -54,7 +51,6 @@ public class Slime_Follow_Behavior : MonoBehaviour
         if (LineofSight(agroRange))
         {
             isAgro = true;
-
         }
         else
         {
@@ -82,22 +78,22 @@ public class Slime_Follow_Behavior : MonoBehaviour
     {
         if (transform.position.x < player.position.x)
         {
+            
+            
             rb2d.velocity = new Vector2(moveSpeed, 0);
             transform.localScale = new Vector2(1, 1);
             isFacingleft = false;
+            canJump = Time.time + 1.5f;
+            
         }
         else
         {
             rb2d.velocity = new Vector2(-moveSpeed, 0);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-1,1);
             isFacingleft = true;
         }
-        if (isgrounded && Time.time > canJump)
-        {
-            rb2d.AddForce(Vector2.up * 1000f);
-            canJump = Time.time + 1.5f;
-        }
-        GetComponent<Animator>().SetBool("slimerun", true);
+    
+
     }
     void StopChasingPlayer()
     {
@@ -141,5 +137,22 @@ public class Slime_Follow_Behavior : MonoBehaviour
     {
         isgrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatisGround);
     }
-
+    void jump()
+    {
+        GetComponent<Rigidbody2D>().AddForce(Vector2.up *slime_jump, ForceMode2D.Impulse);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.tag)
+        {
+            case "Ground":
+                if (Time.time > canJump)
+                {
+                    rb2d.AddForce(Vector2.up * slime_jump);
+                    canJump = Time.time + 3f;
+                }
+                break;
+        }
+    }
+    
 }

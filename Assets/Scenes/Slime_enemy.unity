@@ -165,7 +165,7 @@ GameObject:
   m_Layer: 8
   m_Name: groundCheckpos_slime
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -538,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235070366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.922, y: -0.577, z: 0}
+  m_LocalPosition: {x: 0.282, y: -0.577, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 1042373220}
@@ -1203,6 +1203,8 @@ GameObject:
   - component: {fileID: 961920123}
   - component: {fileID: 961920122}
   - component: {fileID: 961920125}
+  - component: {fileID: 961920127}
+  - component: {fileID: 961920126}
   m_Layer: 6
   m_Name: GroundTiles
   m_TagString: Ground
@@ -14878,6 +14880,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 36.2, y: 0.6}
   m_EdgeRadius: 0
+--- !u!61 &961920126
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961920120}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.05, y: -0.64}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.3}
+  m_EdgeRadius: 0
+--- !u!50 &961920127
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961920120}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1024257553
 GameObject:
   m_ObjectHideFlags: 0
@@ -15423,18 +15472,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46354608952a37844801eb9a1bfb6327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy_Jump_Power: 150
-  Enemy_Attack_Range: 3
+  slime_jump: 700
   castpoint: {fileID: 113615849}
   player: {fileID: 235070373}
   moveSpeed: 1
-  agroRange: 3
-  isgrounded: 0
+  agroRange: 2
+  isgrounded: 1
   groundCheck: {fileID: 140561348}
   whatisGround:
     serializedVersion: 2
     m_Bits: 64
-  checkRadius: 0
+  checkRadius: 0.25
 --- !u!212 &2136875073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15494,8 +15542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136875071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.731, y: -0.6342, z: 0}
-  m_LocalScale: {x: 0.8547941, y: 0.87632245, z: 1}
+  m_LocalPosition: {x: -1.008, y: -0.43, z: 0}
+  m_LocalScale: {x: 0.8547941, y: 0.8325063, z: 1}
   m_Children:
   - {fileID: 113615849}
   - {fileID: 140561348}
@@ -15517,7 +15565,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -15536,18 +15584,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.027184658, y: -0.0021157563}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.51, y: 0.23}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 0.51, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3522439, y: 0.21345592}
+  m_Size: {x: 0.3522439, y: 0.23}
   m_EdgeRadius: 0
 --- !u!58 &2136875077
 CircleCollider2D:
@@ -15562,9 +15610,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.69, y: -0.03}
+  m_Offset: {x: -0.019999996, y: -0.3}
   serializedVersion: 2
-  m_Radius: 0.02520444
+  m_Radius: 0.026782844
 --- !u!95 &2136875078
 Animator:
   serializedVersion: 3

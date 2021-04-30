@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Slime_movement
+  m_Name: Slime_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -24,7 +24,7 @@ AnimationClip:
     - time: 0.083333336
       value: {fileID: 4573312124540879911, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
     - time: 0.16666667
-      value: {fileID: -6166342747453392196, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
+      value: {fileID: 3467878848045899031, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,7 +46,7 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 4532685707926299103, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
     - {fileID: 4573312124540879911, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
-    - {fileID: -6166342747453392196, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
+    - {fileID: 3467878848045899031, guid: b3b69c1668f1c374e8a96394a28f8fe9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

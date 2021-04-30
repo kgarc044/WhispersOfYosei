@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -6166342747453392196
     second: fireslime_idle-Sheet_4
+  - first:
+      213: 3467878848045899031
+    second: fireslime_idle-Sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,12 +118,12 @@ TextureImporter:
       name: fireslime_idle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 51
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,12 +139,12 @@ TextureImporter:
       name: fireslime_idle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 0
-        width: 52
-        height: 23
-      alignment: 9
-      pivot: {x: 0.47194305, y: 0.5070482}
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,22 +157,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireslime_idle-Sheet_4
+      name: fireslime_idle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 137
+        x: 128
         y: 0
-        width: 51
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbafbbe11ffbc6aa0800000000000000
-      internalID: -6166342747453392196
+      spriteID: 71ddddd4071602030800000000000000
+      internalID: 3467878848045899031
       vertices: []
       indices: 
       edges: []
