@@ -12,12 +12,15 @@ public class MagicCast : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             Shoot();
+            
         }
+        
     }
 
     void Shoot()
     {
         //shooting logic
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        
     }
 }
