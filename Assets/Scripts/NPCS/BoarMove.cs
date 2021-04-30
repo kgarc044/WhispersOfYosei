@@ -8,9 +8,12 @@ public class BoarMove : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 targetPosition;
-    public int speed = 3;
+    public float speed = 3;
     public bool facingRight = false;
     public int health = 100;
+    public float start = 0;
+    public float end = 0;
+
     void Start()
     {
         targetPosition = transform.position;
@@ -20,23 +23,23 @@ public class BoarMove : MonoBehaviour
     void Update()
     {
        
-        if (transform.position.x == 3f)
+        if (transform.position.x == start)
         {
             if(facingRight == false)
             {
                 Flip();
             }
-            targetPosition.x = -4f;
+            targetPosition.x = end;
             
         }
-        else if(transform.position.x == -4f)
+        else if(transform.position.x == end)
         {
             if (facingRight == true)
             {
                 Flip();
             }
 
-            targetPosition.x = 3f;
+            targetPosition.x = start;
 
         }
         GetComponent<Animator>().SetBool("IsRunning", true);
