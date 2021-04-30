@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class PlayerStat : MonoBehaviour
 {
     public int maxHealth = 10;
@@ -12,6 +11,7 @@ public class PlayerStat : MonoBehaviour
     public int regenRate = 0;
     public HealthBar hp;
     public ManaBar mp;
+    public MagicCast magic;
 
     private WaitForSeconds tick = new WaitForSeconds(0.1f);
     private Coroutine regen;
@@ -59,6 +59,7 @@ public class PlayerStat : MonoBehaviour
     void Cast(int cost){
         if(currentMana >= cost){
             currentMana -= cost;
+            magic.Shoot();
             mp.SetCurrent(currentMana);
             if(regen != null){
                 StopCoroutine(regen);
