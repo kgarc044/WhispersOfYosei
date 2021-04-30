@@ -8,7 +8,7 @@ public class BoarMove : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 targetPosition;
-    public int speed = 3;
+    public float speed = 3;
     public bool facingRight = false;
     public int health = 100;
     public float start = 0;
