@@ -49,7 +49,7 @@ public class CharacterMechanics : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J) && elementCheck == "Electric")
         {
             GetComponent<Animator>().SetBool("IsElectricAttack", true);
-            Debug.Log("Electric ATTACK");
+            //Debug.Log("Electric ATTACK");
         }
         else
         {

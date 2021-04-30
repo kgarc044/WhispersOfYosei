@@ -14,6 +14,11 @@ public class Projectile : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
+    void Update()
+    {
+        Destroy(gameObject, 2f);
+    }
+
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         BoarMove boar = hitInfo.GetComponent<BoarMove>();
