@@ -68,7 +68,11 @@ public class PlayerMove : MonoBehaviour
                 transform.Rotate(0f, 180f, 0f);
             }
         }
-        if (!this.myAnimation.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        if (this.myAnimation.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
+        else
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         }

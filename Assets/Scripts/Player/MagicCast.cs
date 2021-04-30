@@ -6,16 +6,16 @@ public class MagicCast : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    
+
     void Update()
-    {
+    {/*
         if (Input.GetKeyDown(KeyCode.J))
         {
             Shoot();
-        }
+        }*/
     }
 
-    void Shoot()
+    public void Shoot()
     {
         //shooting logic
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);

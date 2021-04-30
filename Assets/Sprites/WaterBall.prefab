@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3249242116665933560}
   - component: {fileID: -542355475531984811}
   - component: {fileID: 6442279790578853398}
+  - component: {fileID: 8452331083363199889}
   m_Layer: 0
   m_Name: WaterBall
   m_TagString: Untagged
@@ -113,7 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9aa83074dfd254abd99c5b3262adf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9.41
+  speed: 2
+  duration: 0.5
   rb: {fileID: 6442279790578853398}
   damage: 40
 --- !u!50 &6442279790578853398
@@ -137,3 +139,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!95 &8452331083363199889
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673521330850544999}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f5e78946b198df47a03b21a900f4799, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
