@@ -113,7 +113,7 @@ public class Slime_Follow_Behavior : MonoBehaviour
         }
 
         Vector2 endPos = castpoint.position + Vector3.right * castDist;
-        RaycastHit2D hit1 = Physics2D.Linecast(castpoint.position, endPos, 1 << LayerMask.NameToLayer("Action"));
+        RaycastHit2D hit1 = Physics2D.Linecast(castpoint.position, endPos, 1 << LayerMask.NameToLayer("Player"));
 
         if(hit1.collider != null)
         {
