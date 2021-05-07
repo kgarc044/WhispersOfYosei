@@ -22,10 +22,15 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        KnightBoss knight = hitInfo.GetComponent<KnightBoss>();
         BoarMove boar = hitInfo.GetComponent<BoarMove>();
         if (boar != null)
         {
             boar.TakeDamage(damage);
+        }
+        if (knight != null)
+        {
+            knight.TakeDamage(damage/4);
         }
     }
 }
