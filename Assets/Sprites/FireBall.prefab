@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2687765863273776545}
   - component: {fileID: 1977190881841598994}
   m_Layer: 0
-  m_Name: fireball_projectile-Sheet_0
-  m_TagString: Untagged
+  m_Name: FireBall
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,4 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
+  duration: 0.5
   rb: {fileID: 2687765863273776545}
+  damage: 40
