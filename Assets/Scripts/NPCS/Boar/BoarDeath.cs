@@ -10,6 +10,7 @@ public class BoarDeath : MonoBehaviour
     public Transform PlayerCheck;
     public LayerMask whatisPlayer;
     public float checkRadius = 0.5f;
+    public float gameobject_life;
 
     void Start()
     {
@@ -28,7 +29,8 @@ public class BoarDeath : MonoBehaviour
         if (isPlayerChecked)
         {
             GetComponent<Animator>().SetBool("boarDeath", isPlayerChecked);
-            Destroy(gameObject,1);
+            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+            Destroy(gameObject,gameobject_life);
         }
     }
 

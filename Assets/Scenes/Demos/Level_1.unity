@@ -686,7 +686,6 @@ GameObject:
   - component: {fileID: 68251213}
   - component: {fileID: 68251212}
   - component: {fileID: 68251211}
-  - component: {fileID: 68251210}
   m_Layer: 0
   m_Name: Boar 3
   m_TagString: Enemy
@@ -694,24 +693,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &68251210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68251209}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b932aac9adb4e649beaa5b09412fb66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayerChecked: 0
-  PlayerCheck: {fileID: 1406435790}
-  whatisPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  checkRadius: 0.2
 --- !u!114 &68251211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +710,7 @@ MonoBehaviour:
   health: 100
   start: 19.8
   end: 18.3
+  death_time: 0.75
 --- !u!95 &68251212
 Animator:
   serializedVersion: 3
@@ -1084,7 +1066,6 @@ GameObject:
   - component: {fileID: 109618599}
   - component: {fileID: 109618598}
   - component: {fileID: 109618597}
-  - component: {fileID: 109618596}
   m_Layer: 0
   m_Name: Boar 1
   m_TagString: Enemy
@@ -1092,24 +1073,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &109618596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109618595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b932aac9adb4e649beaa5b09412fb66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayerChecked: 0
-  PlayerCheck: {fileID: 1877989952}
-  whatisPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  checkRadius: 0.2
 --- !u!114 &109618597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,6 +1090,7 @@ MonoBehaviour:
   health: 100
   start: 3.5
   end: 1.5
+  death_time: 0.75
 --- !u!95 &109618598
 Animator:
   serializedVersion: 3
@@ -1674,7 +1638,6 @@ GameObject:
   - component: {fileID: 297044431}
   - component: {fileID: 297044430}
   - component: {fileID: 297044429}
-  - component: {fileID: 297044428}
   m_Layer: 0
   m_Name: Boar 2
   m_TagString: Enemy
@@ -1682,24 +1645,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &297044428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297044427}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b932aac9adb4e649beaa5b09412fb66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayerChecked: 0
-  PlayerCheck: {fileID: 28736560}
-  whatisPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  checkRadius: 0.2
 --- !u!114 &297044429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,6 +1662,7 @@ MonoBehaviour:
   health: 100
   start: 16
   end: 14.7
+  death_time: 0.75
 --- !u!95 &297044430
 Animator:
   serializedVersion: 3
@@ -21898,7 +21844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113617104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.303, y: -0.431, z: 0}
+  m_LocalPosition: {x: 21.304, y: -0.438, z: 0}
   m_LocalScale: {x: 0.8547941, y: 0.8325063, z: 1}
   m_Children:
   - {fileID: 454503991}
