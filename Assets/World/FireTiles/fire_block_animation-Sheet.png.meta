@@ -9,14 +9,14 @@ TextureImporter:
       213: -4487443876024724345
     second: fire_block_animation-Sheet_1
   - first:
-      213: 410076989490149420
-    second: fire_block_animation-Sheet_2
+      213: 924319163210731998
+    second: fire_block_animation-Sheet_6
   - first:
-      213: 5735964015842817331
-    second: fire_block_animation-Sheet_3
+      213: -7561978631117397847
+    second: fire_block_animation-Sheet_7
   - first:
-      213: 5950824165085177750
-    second: fire_block_animation-Sheet_4
+      213: 3677124213245358616
+    second: fire_block_animation-Sheet_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,12 +121,12 @@ TextureImporter:
       name: fire_block_animation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 24
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: fire_block_animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 37
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 21
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,64 +160,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire_block_animation-Sheet_2
+      name: fire_block_animation-Sheet_6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 70
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 20
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c283f1969d2e0b500800000000000000
-      internalID: 410076989490149420
+      spriteID: ed11346b167d3dc00800000000000000
+      internalID: 924319163210731998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire_block_animation-Sheet_3
+      name: fire_block_animation-Sheet_7
       rect:
         serializedVersion: 2
-        x: 96
+        x: 100
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 335fbb8c1ec3a9f40800000000000000
-      internalID: 5735964015842817331
+      spriteID: 9a0272500847e0790800000000000000
+      internalID: -7561978631117397847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire_block_animation-Sheet_4
+      name: fire_block_animation-Sheet_8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 132
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 21
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69766b0ac03959250800000000000000
-      internalID: 5950824165085177750
+      spriteID: 8123a7d5df4c70330800000000000000
+      internalID: 3677124213245358616
       vertices: []
       indices: 
       edges: []

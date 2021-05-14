@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 1a79fb245e7b8b14198468c310c99c6b
+guid: 608a7c7923119da4c991a3c32f4a9bc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6685837905471933172
-    second: tree-brush_fire-Sheet_0
+      213: -3425393361215426479
+    second: fire_block2_animation-Sheet_0
   - first:
-      213: -2025320801844391064
-    second: tree-brush_fire-Sheet_1
+      213: -7920885031970995425
+    second: fire_block2_animation-Sheet_1
   - first:
-      213: -1441220571367592277
-    second: tree-brush_fire-Sheet_2
+      213: -8055052895188981039
+    second: fire_block2_animation-Sheet_2
   - first:
-      213: -5851235587216078856
-    second: tree-brush_fire-Sheet_3
+      213: -8679301959613677534
+    second: fire_block2_animation-Sheet_3
   - first:
-      213: 5414987812204701369
-    second: tree-brush_fire-Sheet_4
+      213: -7212102244960465290
+    second: fire_block2_animation-Sheet_4
+  - first:
+      213: -6702392329227487185
+    second: fire_block2_animation-Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,106 +121,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tree-brush_fire-Sheet_0
+      name: fire_block2_animation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 20
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c05f08a19d12733a0800000000000000
-      internalID: -6685837905471933172
+      spriteID: 150f5c0f2ee8670d0800000000000000
+      internalID: -3425393361215426479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-brush_fire-Sheet_1
+      name: fire_block2_animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 16
         y: 0
-        width: 21
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8631bd9167d94e3e0800000000000000
-      internalID: -2025320801844391064
+      spriteID: f1309a2b70d531290800000000000000
+      internalID: -7920885031970995425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-brush_fire-Sheet_2
+      name: fire_block2_animation-Sheet_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 32
         y: 0
-        width: 21
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae26a8b681cffbe0800000000000000
-      internalID: -1441220571367592277
+      spriteID: 1da674fb114b63090800000000000000
+      internalID: -8055052895188981039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-brush_fire-Sheet_3
+      name: fire_block2_animation-Sheet_3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 48
         y: 0
-        width: 21
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f78cde0c3c3ccea0800000000000000
-      internalID: -5851235587216078856
+      spriteID: 22000e64adcec8780800000000000000
+      internalID: -8679301959613677534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-brush_fire-Sheet_4
+      name: fire_block2_animation-Sheet_4
       rect:
         serializedVersion: 2
-        x: 131
+        x: 64
         y: 0
-        width: 22
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6e781b9b6e52b40800000000000000
-      internalID: 5414987812204701369
+      spriteID: 67e8555383779eb90800000000000000
+      internalID: -7212102244960465290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_block2_animation-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28b717ffa15cf2a0800000000000000
+      internalID: -6702392329227487185
       vertices: []
       indices: 
       edges: []
