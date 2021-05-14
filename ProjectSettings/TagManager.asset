@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Goal
   - CM
+  - Projectile
+  - Fire
   layers:
   - Default
   - TransparentFX
