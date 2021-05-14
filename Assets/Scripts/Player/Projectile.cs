@@ -22,6 +22,11 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        if (hitInfo.gameObject.tag ==  "Ground" || hitInfo.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+        Debug.Log(hitInfo.gameObject.name);
         KnightBoss knight = hitInfo.GetComponent<KnightBoss>();
         BoarMove boar = hitInfo.GetComponent<BoarMove>();
         if (boar != null)
@@ -32,5 +37,6 @@ public class Projectile : MonoBehaviour
         {
             knight.TakeDamage(damage/4);
         }
+
     }
 }
