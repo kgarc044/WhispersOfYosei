@@ -40,9 +40,14 @@ public class PlayerStat : MonoBehaviour
         if(currentHealth > dmg){
             currentHealth -= dmg;
             hp.SetCurrent(currentHealth);
+
         }else{
             currentHealth = 0;
             hp.SetCurrent(currentHealth);
+            GetComponent<Animator>().SetBool("IsDead", true);
+            //gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+            GameObject.Find("Player").GetComponent<PlayerMove>().enabled = false;
+            
         }
     }
 
@@ -87,7 +92,7 @@ public class PlayerStat : MonoBehaviour
 //Contact Check
     void OnCollisionEnter2D(Collision2D touch){
         if(touch.collider.CompareTag("Enemy")){
-            Damage(1);
+            Damage(5);
         }
     }
 }
