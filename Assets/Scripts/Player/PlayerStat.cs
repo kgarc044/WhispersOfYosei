@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    public int maxHealth = 10;
+    public int maxHealth = 100;
     public int maxMana = 10;
     public int currentHealth;
     public int currentMana;
@@ -28,8 +28,8 @@ public class PlayerStat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Slash)){ //Healing Button for Debugging purposes
-            Heal(10);
+        if (Input.GetKeyDown(KeyCode.Slash)){ //Healing Button for Debugging purposes
+            Heal(20);
         }
         if(Input.GetKeyDown(KeyCode.J)){
             Cast(2);
@@ -37,7 +37,7 @@ public class PlayerStat : MonoBehaviour
     }
 //Health System
     void Damage(int dmg){ //Damage to the player
-        if(currentHealth > dmg){
+        if (currentHealth > dmg){
             currentHealth -= dmg;
             hp.SetCurrent(currentHealth);
 
@@ -89,10 +89,32 @@ public class PlayerStat : MonoBehaviour
             yield return tick;
         }
     }
-//Contact Check
+    //Contact Check
+    private void OnCollisionStay2D(Collision2D touch)
+    {
+        if (touch.collider.CompareTag("Enemy"))
+        {
+            Damage(1);
+        }
+    }
     void OnCollisionEnter2D(Collision2D touch){
-        if(touch.collider.CompareTag("Enemy")){
-            Damage(5);
+        if (touch.collider.CompareTag("Enemy"))
+        {
+            Damage(1);
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Fire"))
+        {
+            Damage(1);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Fire"))
+        {
+            Damage(1);
         }
     }
 }

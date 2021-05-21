@@ -18,6 +18,11 @@ public class Spirit_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Vector2.Distance(transform.position, playerTransform.position) > 2)
+        {
+            GetComponent<Animator>().SetBool("isRunning", true);
+            transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, 100);
+        }
         if (Vector2.Distance(transform.position, playerTransform.position) > distance)
         {
             GetComponent<Animator>().SetBool("isRunning", true);
