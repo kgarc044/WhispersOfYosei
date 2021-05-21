@@ -7,6 +7,7 @@ public class KnightBoss : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar hp;
+    public float death_time = .6f;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class KnightBoss : MonoBehaviour
 
     public void Die(){
         GetComponent<Animator>().SetBool("isDead",true);
-        Destroy(gameObject,1);
+        Destroy(gameObject, death_time);
     }
 
 }
