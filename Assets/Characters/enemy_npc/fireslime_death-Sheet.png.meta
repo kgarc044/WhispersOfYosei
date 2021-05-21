@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -961228404322314948
     second: fireslime_death-Sheet_5
+  - first:
+      213: 3296853664772080888
+    second: fireslime_death-Sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,10 +124,10 @@ TextureImporter:
       name: fireslime_death-Sheet_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 0
         y: 0
-        width: 35
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +145,10 @@ TextureImporter:
       name: fireslime_death-Sheet_1
       rect:
         serializedVersion: 2
-        x: 78
+        x: 64
         y: 0
-        width: 35
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +166,10 @@ TextureImporter:
       name: fireslime_death-Sheet_2
       rect:
         serializedVersion: 2
-        x: 142
+        x: 128
         y: 0
-        width: 35
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +187,10 @@ TextureImporter:
       name: fireslime_death-Sheet_3
       rect:
         serializedVersion: 2
-        x: 206
+        x: 192
         y: 0
-        width: 35
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,13 +205,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireslime_death-Sheet_5
+      name: fireslime_death-Sheet_4
       rect:
         serializedVersion: 2
-        x: 269
+        x: 256
         y: 0
-        width: 35
-        height: 23
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +219,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c355a5cebd709a2f0800000000000000
-      internalID: -961228404322314948
+      spriteID: 8f44f2dc0f6c0cd20800000000000000
+      internalID: 3296853664772080888
       vertices: []
       indices: 
       edges: []

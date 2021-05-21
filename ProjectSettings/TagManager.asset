@@ -8,6 +8,14 @@ TagManager:
   - Enemy
   - Goal
   - CM
+  - Projectile
+  - Fire
+  - BackgroundFire
+  - BackgroundFire2
+  - BackgroundFire1
+  - BackgroundFire3
+  - GroundFire
+  - Spirit
   layers:
   - Default
   - TransparentFX

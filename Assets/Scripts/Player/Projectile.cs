@@ -29,6 +29,7 @@ public class Projectile : MonoBehaviour
         //Debug.Log(hitInfo.gameObject.name);
         KnightBoss knight = hitInfo.GetComponent<KnightBoss>();
         BoarMove boar = hitInfo.GetComponent<BoarMove>();
+        Fixed_Slime_Follow_behavior slime = hitInfo.GetComponent<Fixed_Slime_Follow_behavior>();
         if (boar != null)
         {
             boar.TakeDamage(damage);
@@ -36,6 +37,10 @@ public class Projectile : MonoBehaviour
         if (knight != null)
         {
             knight.TakeDamage(damage/4);
+        }
+        if (slime != null)
+        {
+            slime.TakeDamage(damage);
         }
 
     }

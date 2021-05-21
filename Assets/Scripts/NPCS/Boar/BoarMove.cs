@@ -13,6 +13,7 @@ public class BoarMove : MonoBehaviour
     public int health = 100;
     public float start = 0;
     public float end = 0;
+    public float death_time;
 
     void Start()
     {
@@ -51,6 +52,7 @@ public class BoarMove : MonoBehaviour
         health -= damage;
         if( health <= 0)
         {
+            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             GetComponent<Animator>().SetBool("boarDeath", true);
             Die();
         }
@@ -58,8 +60,7 @@ public class BoarMove : MonoBehaviour
 
     void Die()
     {
-        
-        Destroy(gameObject,1);
+        Destroy(gameObject,death_time);
     }
 
     void Flip()
