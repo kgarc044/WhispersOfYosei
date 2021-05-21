@@ -16,6 +16,7 @@ TagManager:
   - BackgroundFire3
   - GroundFire
   - Spirit
+  - Boss
   layers:
   - Default
   - TransparentFX

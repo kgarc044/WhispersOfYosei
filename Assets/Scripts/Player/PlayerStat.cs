@@ -76,7 +76,6 @@ public class PlayerStat : MonoBehaviour
         {
             return;
         }
-        
         if (currentHealth > dmg){
             currentHealth -= dmg;
             hp.SetCurrent(currentHealth);
