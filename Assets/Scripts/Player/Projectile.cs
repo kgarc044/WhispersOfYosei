@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log(hitInfo.gameObject.name);
+        //Debug.Log(hitInfo.gameObject.name);
         KnightBoss knight = hitInfo.GetComponent<KnightBoss>();
         BoarMove boar = hitInfo.GetComponent<BoarMove>();
         Fixed_Slime_Follow_behavior slime = hitInfo.GetComponent<Fixed_Slime_Follow_behavior>();
