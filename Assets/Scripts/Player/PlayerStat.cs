@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
+    [SerializeField]
+    private float invincibilityDurationSeconds;
+    [SerializeField]
+    private float invincibilityDeltaTime;
     public int maxHealth = 10;
     public int maxMana = 10;
     public int currentHealth;
@@ -12,6 +16,7 @@ public class PlayerStat : MonoBehaviour
     public HealthBar hp;
     public ManaBar mp;
     public MagicCast magic;
+    private bool isInvincible = false;
 
     private WaitForSeconds tick = new WaitForSeconds(0.1f);
     private Coroutine regen;
@@ -35,9 +40,44 @@ public class PlayerStat : MonoBehaviour
             Cast(2);
         }
     }
-//Health System
+    //Invincible After Taking Damage
+    private IEnumerator BecomeTemporarilyInvincible()
+    {
+        Debug.Log("Player turned invincible!");
+        GetComponent<Animator>().SetBool("IsHurt", true);
+        
+        isInvincible = true;
+        
+        for (float i = 0; i < invincibilityDurationSeconds; i += invincibilityDeltaTime)
+        {
+            
+            // TODO: add any logic we want here
+            yield return new WaitForSeconds(invincibilityDeltaTime);
+        }
+
+        Debug.Log("Player is no longer invincible!");
+        GetComponent<Animator>().SetBool("IsHurt", false);
+        isInvincible = false;
+    }
+    //Invincible After Taking Damage
+    void MethodThatTriggersInvulnerability()
+    {
+        if (!isInvincible)
+        {
+            StartCoroutine(BecomeTemporarilyInvincible());
+        }
+    }
+
+    //Health System
     void Damage(int dmg){ //Damage to the player
-        if(currentHealth > dmg){
+        //Exit if currently invincible
+        if (isInvincible)
+        {
+            
+            return;
+        }
+
+        if (currentHealth > dmg){
             currentHealth -= dmg;
             hp.SetCurrent(currentHealth);
 
@@ -49,6 +89,8 @@ public class PlayerStat : MonoBehaviour
             GameObject.Find("Player").GetComponent<PlayerMove>().enabled = false;
             
         }
+        //Coroutine for invincible
+        StartCoroutine(BecomeTemporarilyInvincible());
     }
 
     void Heal(int heal){
@@ -92,7 +134,7 @@ public class PlayerStat : MonoBehaviour
 //Contact Check
     void OnCollisionEnter2D(Collision2D touch){
         if(touch.collider.CompareTag("Enemy")){
-            Damage(5);
+            Damage(1);
         }
     }
 }
