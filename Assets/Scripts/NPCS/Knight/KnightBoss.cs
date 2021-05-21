@@ -8,6 +8,11 @@ public class KnightBoss : MonoBehaviour
     public int currentHealth;
     public HealthBar hp;
     public float death_time = .6f;
+    public Transform swingPoint;
+    public float swingRange = 0.75f;
+    public int swingDamage = 60;
+    public LayerMask player;
+    public PlayerStat p;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +41,24 @@ public class KnightBoss : MonoBehaviour
     public void Die(){
         GetComponent<Animator>().SetBool("isDead",true);
         Destroy(gameObject, death_time);
+    }
+
+    public void Swing(){
+        GetComponent<Animator>().SetBool("isAtk",true);
+        //hitbox detection
+        Collider2D[] contact = Physics2D.OverlapCircleAll(swingPoint.position, swingRange, player);
+        //Damage
+        foreach(Collider2D player in contact){
+            p.Damage(swingDamage);
+        }
+        GetComponent<Animator>().SetBool("isAtk",false);
+    }
+
+    //hitbox visibility
+    void OnDrawGizmosSelected(){
+        if(swingPoint == null)
+            return;
+        Gizmos.DrawWireSphere(swingPoint.position, swingRange);
     }
 
 }

@@ -36,7 +36,7 @@ public class PlayerStat : MonoBehaviour
         }
     }
 //Health System
-    void Damage(int dmg){ //Damage to the player
+    public void Damage(int dmg){ //Damage to the player
         if (currentHealth > dmg){
             currentHealth -= dmg;
             hp.SetCurrent(currentHealth);
