@@ -18646,7 +18646,7 @@ MonoBehaviour:
   lineOfSight: 1.5
   swingPoint: {fileID: 2087688083}
   swingRange: 0.73
-  swingDamage: 10
+  swingDamage: 2
   playerPos: {fileID: 1668103361}
   player:
     serializedVersion: 2
