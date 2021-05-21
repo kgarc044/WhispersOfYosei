@@ -33,6 +33,7 @@ public class KnightBoss : MonoBehaviour
     }
 
     public void Die(){
+        GetComponent<Animator>().SetBool("isDead",true);
         Destroy(gameObject,1);
     }
 
