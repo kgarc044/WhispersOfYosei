@@ -199,6 +199,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &15973642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18426,6 +18427,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &631615046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21350,6 +21352,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &1837724367
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21891,6 +21894,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &2050299414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22067,6 +22071,7 @@ MonoBehaviour:
     m_Bits: 64
   checkRadius: 0.15
   FacingRight: 1
+  force: 0
 --- !u!61 &2077370787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22211,6 +22216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d630191f4a01d3a45b92189673d4678f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibilityDurationSeconds: 0.85
+  invincibilityDeltaTime: 0.1
   maxHealth: 100
   maxMana: 10
   currentHealth: 0
