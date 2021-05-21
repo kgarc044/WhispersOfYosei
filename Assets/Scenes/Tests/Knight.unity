@@ -18642,10 +18642,12 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   hp: {fileID: 1660596872}
-  death_time: 1.2
+  deathTime: 1.3
+  lineOfSight: 1.5
   swingPoint: {fileID: 2087688083}
-  swingRange: 0.75
-  swingDamage: 60
+  swingRange: 0.73
+  swingDamage: 10
+  playerPos: {fileID: 1668103361}
   player:
     serializedVersion: 2
     m_Bits: 128

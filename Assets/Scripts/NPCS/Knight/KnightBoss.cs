@@ -7,12 +7,21 @@ public class KnightBoss : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar hp;
-    public float death_time = .6f;
+
+    public float deathTime = .6f;
+    
+    public float lineOfSight = 3f;
+
     public Transform swingPoint;
     public float swingRange = 0.75f;
     public int swingDamage = 60;
+    
+    public Transform playerPos;
     public LayerMask player;
     public PlayerStat p;
+
+    private WaitForSeconds tick = new WaitForSeconds(0.1f);
+    private Coroutine regen;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +33,16 @@ public class KnightBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float dist = Vector2.Distance(transform.position, playerPos.position);
+        //print("distToPlayer:" + distToPlayer);
+        if(dist < lineOfSight)
+        {
+            Swing();
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isAtk",false);
+        }
     }
 
     public void TakeDamage(int damage) {
@@ -40,7 +58,7 @@ public class KnightBoss : MonoBehaviour
 
     public void Die(){
         GetComponent<Animator>().SetBool("isDead",true);
-        Destroy(gameObject, death_time);
+        Destroy(gameObject, deathTime);
     }
 
     public void Swing(){
@@ -51,7 +69,7 @@ public class KnightBoss : MonoBehaviour
         foreach(Collider2D player in contact){
             p.Damage(swingDamage);
         }
-        GetComponent<Animator>().SetBool("isAtk",false);
+        
     }
 
     //hitbox visibility
