@@ -13,11 +13,19 @@ public class PlayerMove : MonoBehaviour
     public LayerMask whatisGround;
     public float checkRadius = 0.2f;
     public bool FacingRight = true;
+
+    //private bool explode = false;
+    //private bool largeExplode = false;
+    //private float blowDelay;
+    //private Vector2 blowDirection;
+    public float force;
+
     //public bool onGround;
     // Start is called before the first frame update
     void Start()
     {
-
+       // rb = GetComponent<Rigidbody2D>();
+        
     }
 
     void FixedUpdate()
@@ -28,6 +36,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //GetComponent<Animator>().SetBool("Grounded", isgrounded);
         if (Input.GetButtonDown("Jump") && isgrounded)
         {
@@ -86,5 +95,19 @@ public class PlayerMove : MonoBehaviour
     void checkForGround()
     {
         isgrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatisGround);
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Enemy")
+        {
+            Debug.Log(coll.gameObject.tag);
+            force = 200;
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100));
+            //explode = true;
+
+            //Vector2 dir = coll.contacts[0].point - GetComponent<Rigidbody2D>().position;
+            //blowDirection = -dir.normalized;
+        }
     }
 }
