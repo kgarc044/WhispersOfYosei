@@ -15,6 +15,10 @@ public class KnightBoss : MonoBehaviour
     public Transform swingPoint;
     public float swingRange = 0.75f;
     public int swingDamage = 60;
+
+    public Transform pillarPoint;
+    public float columnRange = 0.3f;
+    public int columnDamage = 70;
     
     public Transform playerPos;
     public LayerMask player;
@@ -38,6 +42,7 @@ public class KnightBoss : MonoBehaviour
         if(dist < lineOfSight)
         {
             Swing();
+            //Special();
         }
         else
         {
@@ -77,11 +82,43 @@ public class KnightBoss : MonoBehaviour
         
     }
 
+    public void Special(){
+        GetComponent<Animator>().SetBool("isSpecial", true);
+        //hitbox detection definitely think there should be a better way to do this buuuut
+        Collider2D[] column1 = Physics2D.OverlapBoxAll(pillarPoint.position, new Vector2(columnRange, 1.25f), player);
+        Collider2D[] column2 = Physics2D.OverlapBoxAll(pillarPoint.position  + new Vector3(-.835f, 0, 0), new Vector2(columnRange, 1.25f), player);
+        Collider2D[] column3 = Physics2D.OverlapBoxAll(pillarPoint.position + new Vector3((-1.585f), 0, 0), new Vector2(columnRange, 1.25f), player);
+        Collider2D[] column4 = Physics2D.OverlapBoxAll(pillarPoint.position + new Vector3((-2.39f), 0, 0), new Vector2(columnRange, 1.25f), player);
+        Collider2D[] column5 = Physics2D.OverlapBoxAll(pillarPoint.position + new Vector3((-3.08f), 0, 0), new Vector2(columnRange, 1.25f), player);
+        foreach(Collider2D player in column1){
+            p.Damage(columnDamage);
+        }
+        foreach(Collider2D player in column2){
+            p.Damage(columnDamage);
+        }
+        foreach(Collider2D player in column3){
+            p.Damage(columnDamage);
+        }
+        foreach(Collider2D player in column4){
+            p.Damage(columnDamage);
+        }
+        foreach(Collider2D player in column5){
+            p.Damage(columnDamage);
+        }
+    }
+
     //hitbox visibility
     void OnDrawGizmosSelected(){
         if(swingPoint == null)
             return;
         Gizmos.DrawWireSphere(swingPoint.position, swingRange);
+        if(pillarPoint == null)
+            return;
+        Gizmos.DrawWireCube(pillarPoint.position, new Vector3(columnRange, 1.25f, 1));
+        Gizmos.DrawWireCube((pillarPoint.position + new Vector3(-.835f, 0, 0)), new Vector3(columnRange, 1.25f, 1));
+        Gizmos.DrawWireCube((pillarPoint.position + new Vector3((-1.585f), 0, 0)), new Vector3(columnRange, 1.25f, 1));
+        Gizmos.DrawWireCube((pillarPoint.position + new Vector3((-2.39f), 0, 0)), new Vector3(columnRange, 1.25f, 1));
+        Gizmos.DrawWireCube((pillarPoint.position + new Vector3((-3.08f), 0, 0)), new Vector3(columnRange, 1.25f, 1));
     }
 
 }
