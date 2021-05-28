@@ -17,6 +17,7 @@ public class PlayerStat : MonoBehaviour
     public ManaBar mp;
     public MagicCast magic;
     private bool isInvincible = false;
+    private bool playerDead = false;
 
     private WaitForSeconds tick = new WaitForSeconds(0.1f);
     private Coroutine regen;
@@ -33,6 +34,11 @@ public class PlayerStat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerDead == true)
+        {
+            return;
+        }
+        
         if (Input.GetKeyDown(KeyCode.Slash)){ //Healing Button for Debugging purposes
             Heal(20);
         }
@@ -81,12 +87,14 @@ public class PlayerStat : MonoBehaviour
             hp.SetCurrent(currentHealth);
 
         }else{
+
             currentHealth = 0;
             hp.SetCurrent(currentHealth);
             GetComponent<Animator>().SetBool("IsDead", true);
-            //gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
             GameObject.Find("Player").GetComponent<PlayerMove>().enabled = false;
-            
+            playerDead = true;
+
         }
         //Coroutine for invincible
         StartCoroutine(BecomeTemporarilyInvincible());

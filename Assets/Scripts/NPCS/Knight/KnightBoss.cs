@@ -53,8 +53,13 @@ public class KnightBoss : MonoBehaviour
     public void TakeDamage(int damage) {
         if (currentHealth - damage > 0){
             currentHealth -= damage;
+            if (currentHealth < 50)
+            {
+                GetComponent<Animator>().SetBool("isSpecial", true);
+            }
             hp.SetCurrent(currentHealth);
         } else{
+            GetComponent<Animator>().SetBool("isSpecial", false);
             currentHealth = 0;
             hp.SetCurrent(currentHealth);
             Die();
