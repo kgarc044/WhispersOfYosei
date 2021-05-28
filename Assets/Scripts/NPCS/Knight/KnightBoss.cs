@@ -41,12 +41,13 @@ public class KnightBoss : MonoBehaviour
         //print("distToPlayer:" + distToPlayer);
         if(dist < lineOfSight)
         {
-            Swing();
-            //Special();
+            //Swing();
+            Special();
         }
         else
         {
             GetComponent<Animator>().SetBool("isAtk",false);
+            GetComponent<Animator>().SetBool("isSpecial",false);
         }
     }
 
@@ -85,11 +86,11 @@ public class KnightBoss : MonoBehaviour
     public void Special(){
         GetComponent<Animator>().SetBool("isSpecial", true);
         //hitbox detection definitely think there should be a better way to do this buuuut
-        Collider2D[] column1 = Physics2D.OverlapBoxAll(pillarPoint.position, new Vector2(columnRange, 1.25f), player);
-        Collider2D[] column2 = Physics2D.OverlapBoxAll(pillarPoint.position  + new Vector3(-.835f, 0, 0), new Vector2(columnRange, 1.25f), player);
-        Collider2D[] column3 = Physics2D.OverlapBoxAll(pillarPoint.position + new Vector3((-1.585f), 0, 0), new Vector2(columnRange, 1.25f), player);
-        Collider2D[] column4 = Physics2D.OverlapBoxAll(pillarPoint.position + new Vector3((-2.39f), 0, 0), new Vector2(columnRange, 1.25f), player);
-        Collider2D[] column5 = Physics2D.OverlapBoxAll(pillarPoint.position + new Vector3((-3.08f), 0, 0), new Vector2(columnRange, 1.25f), player);
+        Collider2D[] column1 = Physics2D.OverlapBoxAll(pillarPoint.position, new Vector2(columnRange * 2, 1.25f/2), player);
+        Collider2D[] column2 = Physics2D.OverlapBoxAll((pillarPoint.position  + new Vector3(-.835f, 0, 0)), new Vector2(columnRange * 2, 1.25f/2), player);
+        Collider2D[] column3 = Physics2D.OverlapBoxAll((pillarPoint.position + new Vector3((-1.585f), 0, 0)), new Vector2(columnRange * 2, 1.25f/2), player);
+        Collider2D[] column4 = Physics2D.OverlapBoxAll((pillarPoint.position + new Vector3((-2.39f), 0, 0)), new Vector2(columnRange * 2, 1.25f/2), player);
+        Collider2D[] column5 = Physics2D.OverlapBoxAll((pillarPoint.position + new Vector3((-3.08f), 0, 0)), new Vector2(columnRange * 2, 1.25f/2), player);
         foreach(Collider2D player in column1){
             p.Damage(columnDamage);
         }
