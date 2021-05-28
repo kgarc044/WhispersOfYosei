@@ -187,7 +187,7 @@ MonoBehaviour:
   health: 100
   start: 12
   end: 10
-  death_time: 0
+  death_time: 1
   trigger: 0
   castpoint: {fileID: 1811936220}
   agroRange: 1
@@ -19331,7 +19331,7 @@ MonoBehaviour:
   health: 100
   start: 6
   end: 7.8
-  death_time: 0
+  death_time: 1
   trigger: 0
   castpoint: {fileID: 1457370084}
   agroRange: 1
@@ -22524,7 +22524,7 @@ MonoBehaviour:
   health: 100
   start: 16
   end: 17.5
-  death_time: 0
+  death_time: 1
   trigger: 0
   castpoint: {fileID: 1603867047}
   agroRange: 1

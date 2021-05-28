@@ -62,6 +62,7 @@ public class Kami_enemy_mov : MonoBehaviour
         else if (trigger == true)
         {
             GetComponent<Animator>().SetBool("DiveBomb", true);
+            Destroy(gameObject, death_time);
             divebomb(agroRange);
         }
     }
@@ -99,16 +100,6 @@ public class Kami_enemy_mov : MonoBehaviour
         return val;
     }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-        if (health <= 0)
-        {
-            gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-            GetComponent<Animator>().SetBool("Kami_enemy", true);
-            Die();
-        }
-    }
     void Die()
     {
         Destroy(gameObject, death_time);
