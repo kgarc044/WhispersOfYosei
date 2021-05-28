@@ -24,6 +24,9 @@ public class KnightBoss : MonoBehaviour
     public LayerMask player;
     public PlayerStat p;
 
+
+    public float timeRemaining = 3;
+
     private WaitForSeconds tick = new WaitForSeconds(0.1f);
     private Coroutine regen;
 
@@ -37,26 +40,45 @@ public class KnightBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            checkLOS();
+            //timeRemaining = 3;
+        }
+        
+    }
+    
+
+    public void checkLOS() { 
         float dist = Vector2.Distance(transform.position, playerPos.position);
         //print("distToPlayer:" + distToPlayer);
-        if(dist < lineOfSight)
+        if (dist < lineOfSight)
         {
             Swing();
             //Special();
         }
         else
         {
+<<<<<<< Updated upstream
             GetComponent<Animator>().SetBool("isAtk",false);
+=======
+            GetComponent<Animator>().SetBool("isAtk", false);
+            GetComponent<Animator>().SetBool("isSpecial", false);
+
+>>>>>>> Stashed changes
         }
+
     }
+
 
     public void TakeDamage(int damage) {
         if (currentHealth - damage > 0){
             currentHealth -= damage;
-            if (currentHealth < 50)
-            {
-                GetComponent<Animator>().SetBool("isSpecial", true);
-            }
+            
             hp.SetCurrent(currentHealth);
         } else{
             GetComponent<Animator>().SetBool("isSpecial", false);
