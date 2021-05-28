@@ -17250,6 +17250,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &751646868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18665,7 +18666,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22969437, y: -0.023584843}
+  m_Offset: {x: 0.22969437, y: -0.009362042}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18676,7 +18677,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35964584, y: 1.2328303}
+  m_Size: {x: 0.34610736, y: 1.2043847}
   m_EdgeRadius: 0
 --- !u!50 &1255080307
 Rigidbody2D:
@@ -18860,6 +18861,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &1416205830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19137,6 +19139,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &1435378832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20083,6 +20086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d630191f4a01d3a45b92189673d4678f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibilityDurationSeconds: 0
+  invincibilityDeltaTime: 0
   maxHealth: 100
   maxMana: 10
   currentHealth: 0
@@ -20184,6 +20189,7 @@ MonoBehaviour:
     m_Bits: 64
   checkRadius: 0.15
   FacingRight: 1
+  force: 0
 --- !u!50 &1668103369
 Rigidbody2D:
   serializedVersion: 4
@@ -21245,6 +21251,7 @@ MonoBehaviour:
     m_Bits: 0
   checkRadius: 0.2
   FacingRight: 1
+  force: 0
 --- !u!61 &2121300815
 BoxCollider2D:
   m_ObjectHideFlags: 0
