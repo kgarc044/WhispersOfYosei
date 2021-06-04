@@ -16,7 +16,7 @@ public class FirstSpeech : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0.1f;
+        Time.timeScale = 0.01f;
         StartCoroutine(Type());
     }
 
@@ -53,7 +53,7 @@ public class FirstSpeech : MonoBehaviour
             foreach (char letter in sentences[index].ToCharArray())
             {
                 textDisplay.text += letter;
-                yield return new WaitForSeconds(0.001f);
+                yield return new WaitForSeconds(0.0001f);
             }
         }
         else

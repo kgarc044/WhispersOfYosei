@@ -28,6 +28,12 @@ public class KnightBoss : MonoBehaviour
     public PlayerStat p;
     #endregion
     public GameObject secondSpeechOverlay;
+    public GameObject fireSpirit;
+    public GameObject pillar1;
+    public GameObject pillar2;
+    public GameObject pillar3;
+    public GameObject pillar4;
+    public GameObject pillar5;
 
     #region Private Variables
     private float timer = 0;
@@ -52,6 +58,11 @@ public class KnightBoss : MonoBehaviour
     }
     
     public void Cooldown() {
+        pillar1.SetActive(false);
+        pillar2.SetActive(false);
+        pillar3.SetActive(false);
+        pillar4.SetActive(false);
+        pillar5.SetActive(false);
         cooldown = true;
     }
 
@@ -144,13 +155,15 @@ public class KnightBoss : MonoBehaviour
         } else{
             currentHealth = 0;
             hp.SetCurrent(currentHealth);
+            Time.timeScale = 0.01f;
+            Debug.Log("Speech please");
+            secondSpeechOverlay.SetActive(true);
+            fireSpirit.SetActive(true);
             Die();
         }
     }
 
     public void Die(){
-        Time.timeScale = 0.1f;
-        secondSpeechOverlay.SetActive(true);
         GetComponent<Animator>().SetBool("isDead",true);
         Destroy(gameObject, deathTime);
     }
@@ -166,7 +179,14 @@ public class KnightBoss : MonoBehaviour
         
     }
 
-    public void Special(){
+    public void Special()
+    {
+        pillar1.SetActive(true);
+        pillar2.SetActive(true);
+        pillar3.SetActive(true);
+        pillar4.SetActive(true);
+        pillar5.SetActive(true);
+        /*
         //attacking = true;
         //hitbox detection definitely think there should be a better way to do this buuuut
         Collider2D[] column1 = Physics2D.OverlapBoxAll(pillarPoint.position, new Vector2(columnRange * 2, 1.25f/2), player);
@@ -189,6 +209,7 @@ public class KnightBoss : MonoBehaviour
         foreach(Collider2D player in column5){
             p.Damage(columnDamage);
         }
+        */
     }
 
     //hitbox visibility

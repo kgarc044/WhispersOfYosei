@@ -18,7 +18,7 @@ public class SecondSpeech : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0.1f;
+        Time.timeScale = 0.01f;
         StartCoroutine(Type());
     }
 
@@ -29,52 +29,60 @@ public class SecondSpeech : MonoBehaviour
             continueButton.SetActive(true);
         }
         if (index == 0 || index == 1 || index == 5 ||
-            index == 7 || index == 8)
+            index == 8 || index == 9)
         {
             shinoImage.SetActive(false);
             spiritImage.SetActive(false);
             fireSpiritImage.SetActive(false);
             bossImage.SetActive(true);
         }
-        if (index == 2 || index == 10 || index == 15 ||
-            index == 17 || index == 19)
+        if (index == 2 || index == 11 || index == 17 ||
+            index == 19 || index == 21)
         {
             bossImage.SetActive(false);
             spiritImage.SetActive(false);
             fireSpiritImage.SetActive(false);
             shinoImage.SetActive(true);
         }
-        if (index == 14)
+        if (index == 16)
         {
             bossImage.SetActive(false);
             spiritImage.SetActive(false);
             fireSpiritImage.SetActive(true);
             shinoImage.SetActive(false);
         }
-        if (index == 3 || index == 4 || index == 9 || 
-            index == 11 || index == 16 || index == 18 ||
-            index == 20)
+        if (index == 3 || index == 4 || index == 10 || 
+            index == 12 || index == 18 || index == 20 ||
+            index == 222)
         {
             bossImage.SetActive(false);
             spiritImage.SetActive(true);
             fireSpiritImage.SetActive(false);
             shinoImage.SetActive(false);
         }
-        if (index == 6 || index == 12)
+        if (index == 6 || index == 13)
         {
             Time.timeScale = 1f;
             secondSpeechOverlay.SetActive(false);
+            index++;
+        }
+        if (index == 7 || index == 14)
+        {
+            bossImage.SetActive(false);
+            spiritImage.SetActive(false);
+            fireSpiritImage.SetActive(false);
+            shinoImage.SetActive(false);
         }
     }
 
     IEnumerator Type()
     {
-        if (index < 20)
+        if (index < 22)
         {
             foreach (char letter in sentences[index].ToCharArray())
             {
                 textDisplay.text += letter;
-                yield return new WaitForSeconds(0.001f);
+                yield return new WaitForSeconds(0.0001f);
             }
         }
         else

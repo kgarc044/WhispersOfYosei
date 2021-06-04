@@ -146,27 +146,31 @@ public class PlayerStat : MonoBehaviour
     {
         if (touch.collider.CompareTag("Enemy"))
         {
-            Damage(5);
+            Damage(20);
         }
     }
     void OnCollisionEnter2D(Collision2D touch){
         if (touch.collider.CompareTag("Enemy"))
         {
-            Damage(50);
+            Damage(20);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Fire"))
         {
-            Damage(1);
+            Damage(5);
+        }
+        if (collision.CompareTag("Enemy"))
+        {
+            Damage(20);
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Fire"))
         {
-            Damage(1);
+            Damage(5);
         }
     }
 }
