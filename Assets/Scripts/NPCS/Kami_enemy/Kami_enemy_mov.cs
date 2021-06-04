@@ -14,7 +14,7 @@ public class Kami_enemy_mov : MonoBehaviour
     public float death_time;
     public bool trigger = false;
     Vector3 origin;
-    float maxMoveDistance = 10;
+    //float maxMoveDistance = 10;
 
     Rigidbody2D rb2d;
 
