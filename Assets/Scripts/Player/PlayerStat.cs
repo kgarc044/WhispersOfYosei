@@ -16,6 +16,8 @@ public class PlayerStat : MonoBehaviour
     public HealthBar hp;
     public ManaBar mp;
     public MagicCast magic;
+    public AudioSource waterShot;
+
     private bool isInvincible = false;
     private bool playerDead = false;
 
@@ -114,6 +116,7 @@ public class PlayerStat : MonoBehaviour
         if(currentMana >= cost){
             currentMana -= cost;
             magic.Shoot();
+            waterShot.Play();
             mp.SetCurrent(currentMana);
             if(regen != null){
                 StopCoroutine(regen);
