@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player_Checkpoint : MonoBehaviour
 {
     private Master_Checkpoint cm;
+    public GameObject firstSpeechOverlay;
 
     private void Start()
     {
@@ -17,7 +18,30 @@ public class Player_Checkpoint : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            playerDied();
         }
+        if (GetComponent<Animator>().GetBool("IsDead") == true)
+        {
+            StartCoroutine(wait());
+        }
+    }
+    IEnumerator wait()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(3);
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+        playerDied();
+    }
+        public void playerDied()
+    {
+        Debug.Log("DEAD\n");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        firstSpeechOverlay.SetActive(false);
     }
 }
