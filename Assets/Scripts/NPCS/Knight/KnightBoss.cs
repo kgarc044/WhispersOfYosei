@@ -16,12 +16,12 @@ public class KnightBoss : MonoBehaviour
     public Transform swingPoint;
     public float swingRange = 0.75f;
     public int swingDamage = 60;
-    public float swingTime = 1;
+    public float swingTime = 2;
 
     public Transform pillarPoint;
     public float columnRange = 0.3f;
     public int columnDamage = 70;
-    public float pillarTime = 1;
+    public float pillarTime = 2;
     
     public Transform playerPos;
     public LayerMask player;
@@ -32,12 +32,13 @@ public class KnightBoss : MonoBehaviour
     private float timer = 0;
     private bool cooldown = false;
     //private bool near = false;
-    private bool attacking = false;
+    //private bool attacking = false;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        
         currentHealth = maxHealth;
         hp.SetMax(maxHealth);
         StartCoroutine(AttackPattern());
@@ -62,18 +63,25 @@ public class KnightBoss : MonoBehaviour
         }
     }
 
-    private void Halt(){
+    private void AttackHalt(){
         Debug.Log("Stopped");
-        attacking = false;
+        //attacking = false;
         GetComponent<Animator>().SetBool("isAtk", false);
+    }
+
+    private void SpecialHalt()
+    {
+        Debug.Log("Stopped");
+        //attacking = false;
         GetComponent<Animator>().SetBool("isSpecial", false);
     }
 
     private bool checkLOS() { 
         float dist = Vector2.Distance(transform.position, playerPos.position);
         //print("distToPlayer:" + distToPlayer);
-        if (dist < lineOfSight)
+        if ((dist < lineOfSight) )
         {
+            
             return true;
         }
         else
@@ -85,24 +93,54 @@ public class KnightBoss : MonoBehaviour
 //Attack Pattern
 
     IEnumerator AttackPattern(){
-        while(checkLOS() && !attacking){
-            Debug.Log("Attack");
+            
+            while (checkLOS() /*&& !attacking*/)
+            {
+                Debug.Log("Attack");
+                SwingThatSword();
+                Debug.Log("Wait");
+                yield return new WaitForSeconds(swingTime);
+                Debug.Log("Special");
+                UseThatSpecial();
+                yield return new WaitForSeconds(pillarTime);
+            }
+    }
+
+    public void SwingThatSword()
+    {
+        if (currentHealth == maxHealth)
+        {
+            GetComponent<Animator>().SetBool("isAtk", false);
+        }
+        else
+        {
             GetComponent<Animator>().SetBool("isAtk", true);
-            Debug.Log("Wait");
-            yield return new WaitForSeconds(swingTime);
-            Debug.Log("Special");
-            GetComponent<Animator>().SetBool("isSpecial", true);
-            yield return new WaitForSeconds(pillarTime);
+
         }
     }
 
+    public void UseThatSpecial()
+    {
+        if (currentHealth == maxHealth)
+        {
+            GetComponent<Animator>().SetBool("isSpecial", false);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isSpecial", true);
+
+        }
+    }
+
+    //public void SwingTheSwordOnPlayer
+
     public void TakeDamage(int damage) {
+        
         if (currentHealth - damage > 0){
             currentHealth -= damage;
             
             hp.SetCurrent(currentHealth);
         } else{
-            GetComponent<Animator>().SetBool("isSpecial", false);
             currentHealth = 0;
             hp.SetCurrent(currentHealth);
             Die();
@@ -115,7 +153,7 @@ public class KnightBoss : MonoBehaviour
     }
 
     public void Swing(){
-        attacking = true;
+        //attacking = true;
         //hitbox detection
         Collider2D[] contact = Physics2D.OverlapCircleAll(swingPoint.position, swingRange, player);
         //Damage
@@ -126,7 +164,7 @@ public class KnightBoss : MonoBehaviour
     }
 
     public void Special(){
-        attacking = true;
+        //attacking = true;
         //hitbox detection definitely think there should be a better way to do this buuuut
         Collider2D[] column1 = Physics2D.OverlapBoxAll(pillarPoint.position, new Vector2(columnRange * 2, 1.25f/2), player);
         Collider2D[] column2 = Physics2D.OverlapBoxAll((pillarPoint.position  + new Vector3(-.835f, 0, 0)), new Vector2(columnRange * 2, 1.25f/2), player);

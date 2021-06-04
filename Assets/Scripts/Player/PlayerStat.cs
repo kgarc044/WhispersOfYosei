@@ -66,13 +66,13 @@ public class PlayerStat : MonoBehaviour
         isInvincible = false;
     }
     //Invincible After Taking Damage
-    void MethodThatTriggersInvulnerability()
+    /*(void MethodThatTriggersInvulnerability()
     {
         if (!isInvincible)
         {
             StartCoroutine(BecomeTemporarilyInvincible());
         }
-    }
+    }*/
 
     //Health System
     public void Damage(int dmg){ //Damage to the player
