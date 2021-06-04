@@ -16,19 +16,19 @@ public class PlayerStat : MonoBehaviour
     public HealthBar hp;
     public ManaBar mp;
     public MagicCast magic;
+    public AudioSource waterShot;
+
     private bool isInvincible = false;
     private bool playerDead = false;
 
     private WaitForSeconds tick = new WaitForSeconds(0.1f);
     private Coroutine regen;
-    private AudioSource waterShot;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         currentMana = maxMana;
-        waterShot = GetComponent<AudioSource>();
         hp.SetMax(maxHealth);
         mp.SetMax(maxMana);
     }
