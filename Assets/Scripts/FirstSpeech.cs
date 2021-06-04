@@ -8,7 +8,6 @@ public class FirstSpeech : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
     [SerializeField] private int index;
-    public float typingSpeed;
 
     public GameObject continueButton;
     public GameObject shinoImage;
@@ -17,6 +16,7 @@ public class FirstSpeech : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 0.1f;
         StartCoroutine(Type());
     }
 
@@ -53,11 +53,12 @@ public class FirstSpeech : MonoBehaviour
             foreach (char letter in sentences[index].ToCharArray())
             {
                 textDisplay.text += letter;
-                yield return new WaitForSeconds(0.02f);
+                yield return new WaitForSeconds(0.001f);
             }
         }
         else
         {
+            Time.timeScale = 1f;
             firstSpeechOverlay.SetActive(false);
         }
     }

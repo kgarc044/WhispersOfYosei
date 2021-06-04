@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player_Checkpoint : MonoBehaviour
 {
     private Master_Checkpoint cm;
+    public GameObject firstSpeechOverlay;
 
     private void Start()
     {
@@ -40,5 +41,7 @@ public class Player_Checkpoint : MonoBehaviour
     {
         Debug.Log("DEAD\n");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        firstSpeechOverlay.SetActive(false);
     }
 }

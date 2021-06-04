@@ -27,7 +27,8 @@ public class KnightBoss : MonoBehaviour
     public LayerMask player;
     public PlayerStat p;
     #endregion
-    
+    public GameObject secondSpeechOverlay;
+
     #region Private Variables
     private float timer = 0;
     private bool cooldown = false;
@@ -148,6 +149,8 @@ public class KnightBoss : MonoBehaviour
     }
 
     public void Die(){
+        Time.timeScale = 0.1f;
+        secondSpeechOverlay.SetActive(true);
         GetComponent<Animator>().SetBool("isDead",true);
         Destroy(gameObject, deathTime);
     }
