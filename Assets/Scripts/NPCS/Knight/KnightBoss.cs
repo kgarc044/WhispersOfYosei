@@ -28,7 +28,6 @@ public class KnightBoss : MonoBehaviour
     public PlayerStat p;
     #endregion
     public GameObject secondSpeechOverlay;
-    public GameObject fireSpirit;
     public GameObject pillar1;
     public GameObject pillar2;
     public GameObject pillar3;
@@ -158,7 +157,6 @@ public class KnightBoss : MonoBehaviour
             Time.timeScale = 0.01f;
             Debug.Log("Speech please");
             secondSpeechOverlay.SetActive(true);
-            fireSpirit.SetActive(true);
             Die();
         }
     }
