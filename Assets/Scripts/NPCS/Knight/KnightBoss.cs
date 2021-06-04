@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KnightBoss : MonoBehaviour
 {
+    #region Public Variables
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar hp;
@@ -15,68 +16,131 @@ public class KnightBoss : MonoBehaviour
     public Transform swingPoint;
     public float swingRange = 0.75f;
     public int swingDamage = 60;
+    public float swingTime = 2;
 
     public Transform pillarPoint;
     public float columnRange = 0.3f;
     public int columnDamage = 70;
+    public float pillarTime = 2;
     
     public Transform playerPos;
     public LayerMask player;
     public PlayerStat p;
-
-
-    public float timeRemaining = 3;
-
-    private WaitForSeconds tick = new WaitForSeconds(0.1f);
-    private Coroutine regen;
+    #endregion
+    
+    #region Private Variables
+    private float timer = 0;
+    private bool cooldown = false;
+    //private bool near = false;
+    //private bool attacking = false;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        
         currentHealth = maxHealth;
         hp.SetMax(maxHealth);
+        StartCoroutine(AttackPattern());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timeRemaining > 0)
-        {
-            timeRemaining -= Time.deltaTime;
-        }
-        else
-        {
-            checkLOS();
-            //timeRemaining = 3;
-        }
-        
+        checkLOS();
     }
     
+    public void Cooldown() {
+        cooldown = true;
+    }
 
-    public void checkLOS() { 
+    private void Wait(float time){
+        timer += Time.deltaTime;
+
+        if(timer >= time && cooldown){
+            cooldown = false;
+            timer = 0;
+        }
+    }
+
+    private void AttackHalt(){
+        Debug.Log("Stopped");
+        //attacking = false;
+        GetComponent<Animator>().SetBool("isAtk", false);
+    }
+
+    private void SpecialHalt()
+    {
+        Debug.Log("Stopped");
+        //attacking = false;
+        GetComponent<Animator>().SetBool("isSpecial", false);
+    }
+
+    private bool checkLOS() { 
         float dist = Vector2.Distance(transform.position, playerPos.position);
         //print("distToPlayer:" + distToPlayer);
-        if (dist < lineOfSight)
+        if ((dist < lineOfSight) )
         {
-            //Swing();
-            Special();
+            
+            return true;
         }
         else
         {
-            GetComponent<Animator>().SetBool("isAtk", false);
-            GetComponent<Animator>().SetBool("isSpecial", false);
+            return false;
         }
-
     }
 
+//Attack Pattern
+
+    IEnumerator AttackPattern(){
+            
+            while (checkLOS() /*&& !attacking*/)
+            {
+                Debug.Log("Attack");
+                SwingThatSword();
+                Debug.Log("Wait");
+                yield return new WaitForSeconds(swingTime);
+                Debug.Log("Special");
+                UseThatSpecial();
+                yield return new WaitForSeconds(pillarTime);
+            }
+    }
+
+    public void SwingThatSword()
+    {
+        if (currentHealth == maxHealth)
+        {
+            GetComponent<Animator>().SetBool("isAtk", false);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isAtk", true);
+
+        }
+    }
+
+    public void UseThatSpecial()
+    {
+        if (currentHealth == maxHealth)
+        {
+            GetComponent<Animator>().SetBool("isSpecial", false);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isSpecial", true);
+
+        }
+    }
+
+    //public void SwingTheSwordOnPlayer
 
     public void TakeDamage(int damage) {
+        
         if (currentHealth - damage > 0){
             currentHealth -= damage;
             
             hp.SetCurrent(currentHealth);
         } else{
-            GetComponent<Animator>().SetBool("isSpecial", false);
             currentHealth = 0;
             hp.SetCurrent(currentHealth);
             Die();
@@ -89,7 +153,7 @@ public class KnightBoss : MonoBehaviour
     }
 
     public void Swing(){
-        GetComponent<Animator>().SetBool("isAtk",true);
+        //attacking = true;
         //hitbox detection
         Collider2D[] contact = Physics2D.OverlapCircleAll(swingPoint.position, swingRange, player);
         //Damage
@@ -100,7 +164,7 @@ public class KnightBoss : MonoBehaviour
     }
 
     public void Special(){
-        GetComponent<Animator>().SetBool("isSpecial", true);
+        //attacking = true;
         //hitbox detection definitely think there should be a better way to do this buuuut
         Collider2D[] column1 = Physics2D.OverlapBoxAll(pillarPoint.position, new Vector2(columnRange * 2, 1.25f/2), player);
         Collider2D[] column2 = Physics2D.OverlapBoxAll((pillarPoint.position  + new Vector3(-.835f, 0, 0)), new Vector2(columnRange * 2, 1.25f/2), player);
