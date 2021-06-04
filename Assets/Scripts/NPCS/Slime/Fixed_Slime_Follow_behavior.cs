@@ -19,6 +19,7 @@ public class Fixed_Slime_Follow_behavior : MonoBehaviour
 
     public int health;
     public float death_time;
+    public AudioSource moveSound;
 
     void Start()
     {
