@@ -21,12 +21,14 @@ public class PlayerStat : MonoBehaviour
 
     private WaitForSeconds tick = new WaitForSeconds(0.1f);
     private Coroutine regen;
+    private AudioSource waterShot;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         currentMana = maxMana;
+        waterShot = GetComponent<AudioSource>();
         hp.SetMax(maxHealth);
         mp.SetMax(maxMana);
     }
@@ -114,6 +116,7 @@ public class PlayerStat : MonoBehaviour
         if(currentMana >= cost){
             currentMana -= cost;
             magic.Shoot();
+            waterShot.Play();
             mp.SetCurrent(currentMana);
             if(regen != null){
                 StopCoroutine(regen);
