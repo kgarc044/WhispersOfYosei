@@ -16,6 +16,7 @@ public class Item_Checkpoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             cm.lastCheckPointPos = transform.position;
+            GetComponent<Animator>().SetBool("hit", true);
         }
     }
 }

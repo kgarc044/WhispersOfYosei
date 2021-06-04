@@ -143,13 +143,13 @@ public class PlayerStat : MonoBehaviour
     {
         if (touch.collider.CompareTag("Enemy"))
         {
-            Damage(1);
+            Damage(5);
         }
     }
     void OnCollisionEnter2D(Collision2D touch){
         if (touch.collider.CompareTag("Enemy"))
         {
-            Damage(1);
+            Damage(50);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
