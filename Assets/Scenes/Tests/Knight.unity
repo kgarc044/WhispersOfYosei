@@ -691,9 +691,11 @@ MonoBehaviour:
   swingPoint: {fileID: 1843364393}
   swingRange: 0.65
   swingDamage: 2
+  swingTime: 2
   pillarPoint: {fileID: 748132860}
   columnRange: 0.3
   columnDamage: 10
+  pillarTime: 1
   playerPos: {fileID: 1668103361}
   player:
     serializedVersion: 2
