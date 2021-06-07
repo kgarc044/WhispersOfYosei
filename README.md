@@ -15,14 +15,3 @@ A mysterious girl named Shino is found in a forest. Shino, wakes up in the fores
 ![](Assets/Characters/Shino/Shino_Idle_Sheets/shino_idle_earth_animation-Sheet.png)
 ![](Assets/Characters/Shino/Shino_Idle_Sheets/shino_idle_electro_animation-Sheet.png)
 ![](Assets/Characters/Shino/Shino_Idle_Sheets/shino_idle_fire_animation-Sheet.png)
-
-# Mechanics
-
-These spirits will be utilized to overcome obstacles ranging from environmental obstructions and enemies of varying elements. 
-
-![](Assets/Characters/enemy_npc/fireboar_idle-Sheet.png)
-
-![](Assets/Characters/enemy_npc/fireboar_charge.png)
-
-Examples of obstructions would be flames scattered throughout the level that block the player's path. The player, Shino, will use the water element to clear the way towards their goal.
-The team would like to implement most features using our own software and devices. For example we plan to create everything from level design, the soundtrack, main character assets, enemy assets and maybe some voice acting all custom made by the team's experience and software available.
